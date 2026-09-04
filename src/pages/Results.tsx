@@ -1,0 +1,175 @@
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useSessionStore } from '../stores/sessionStore'
+import { generateRoutes } from '../lib/recommendations'
+import { TierSelector } from '../components/bars/TierSelector'
+import { DistanceFilter } from '../components/bars/DistanceFilter'
+import { BarCard } from '../components/bars/BarCard'
+import { Card } from '../components/ui/Card'
+import { Button } from '../components/ui/Button'
+import { DRINK_CATEGORIES } from '../lib/drinks'
+import type { BudgetTier, DistancePreference, BarRoute } from '../types'
+
+const STOCKHOLM = { lat: 59.3293, lng: 18.0686 }
+
+export default function Results() {
+  const navigate = useNavigate()
+  const { bacResult, sessionInput } = useSessionStore()
+  const [routes, setRoutes] = useState<BarRoute[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+  const [tier, setTier] = useState<BudgetTier>('cheap')
+  const [distPref, setDistPref] = useState<DistancePreference>(sessionInput?.distance_pref ?? 'near')
+  const [userPos, setUserPos] = useState<{ lat: number; lng: number }>(STOCKHOLM)
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      pos => setUserPos({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
+      () => {}
+    )
+  }, [])
+
+  useEffect(() => {
+    if (!bacResult) return
+    setLoading(true)
+    setError('')
+    generateRoutes({ userLat: userPos.lat, userLng: userPos.lng, bacResult, distancePref: distPref })
+      .then(r => {
+        setRoutes(r)
+        if (r.length > 0) setTier(r[0].tier)
+      })
+      .catch(e => setError(e.message))
+      .finally(() => setLoading(false))
+  }, [distPref, userPos, bacResult])
+
+  if (!bacResult) {
+    return (
+      <main className="min-h-screen flex flex-col items-center justify-center gap-4 p-4" style={{ background: 'var(--bg)' }}>
+        <p style={{ color: 'var(--text-soft)' }}>Ingen beräkning gjord ännu.</p>
+        <Button onClick={() => navigate('/')} variant="primary">Till kalkylatorn</Button>
+      </main>
+    )
+  }
+
+  const activeRoute = routes.find(r => r.tier === tier)
+
+  const selectedCategories = DRINK_CATEGORIES.filter(c => sessionInput?.drink_categories?.includes(c.id))
+  // Split the remaining grams evenly across the chosen drink types, then round each up to whole units.
+  const categoryCounts = selectedCategories.map(c => ({
+    ...c,
+    count: Math.ceil(bacResult.total_grams_alcohol / selectedCategories.length / c.grams),
+  }))
+
+  // Spread each drink type's count as evenly as possible across the bars on the route.
+  // The starting bar for each type's "remainder" unit is staggered so a short route
+  // doesn't end up with a bar that gets none of any type.
+  function distributeAcrossBars(count: number, bars: number, offset: number): number[] {
+    if (bars <= 0) return []
+    const base = Math.floor(count / bars)
+    const remainder = count % bars
+    return Array.from({ length: bars }, (_, i) => base + ((i - offset + bars) % bars < remainder ? 1 : 0))
+  }
+
+  const barCount = activeRoute?.bars.length ?? 0
+  const perBarDistribution = categoryCounts.map((c, i) => ({
+    ...c,
+    perBar: distributeAcrossBars(c.count, barCount, i),
+  }))
+
+  return (
+    <main className="min-h-screen pb-16" style={{ background: 'var(--bg)' }}>
+      <div className="max-w-lg mx-auto px-4 pt-24">
+        <motion.div className="mb-8" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
+          <h1 className="font-display font-bold text-4xl mb-1">Kvällens plan</h1>
+          <p className="text-sm mb-4" style={{ color: 'var(--text-soft)' }}>
+            Mål: <strong style={{ color: 'var(--accent-dark)' }}>{bacResult.target_bac}‰</strong>
+            {' '}— behöver{' '}
+            <strong style={{ color: '#3f8a5c' }}>{bacResult.additional_drinks_needed} standardglas</strong> till
+          </p>
+
+          {categoryCounts.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {categoryCounts.map(c => (
+                <span
+                  key={c.id}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-sm font-medium"
+                  style={{ borderColor: 'var(--card-border)', background: 'var(--card)' }}
+                >
+                  <span>{c.icon}</span>
+                  {c.count} {c.label}
+                </span>
+              ))}
+            </div>
+          )}
+        </motion.div>
+
+        <div className="mb-6">
+          <p className="font-mono-label text-xs tracking-widest mb-3" style={{ color: 'var(--label)' }}>Avstånd</p>
+          <DistanceFilter selected={distPref} onChange={setDistPref} />
+        </div>
+
+        <div className="mb-8">
+          <p className="font-mono-label text-xs tracking-widest mb-3" style={{ color: 'var(--label)' }}>Budget-typ</p>
+          <TierSelector
+            selected={tier}
+            onChange={setTier}
+            availableTiers={routes.map(r => r.tier)}
+          />
+        </div>
+
+        {loading && (
+          <div className="text-center py-12">
+            <div
+              className="inline-block w-8 h-8 border-2 rounded-full animate-spin mb-4"
+              style={{ borderColor: 'var(--accent-soft)', borderTopColor: 'var(--accent)' }}
+            />
+            <p className="text-sm" style={{ color: 'var(--text-soft)' }}>Söker barer i Stockholm...</p>
+          </div>
+        )}
+
+        {error && (
+          <Card>
+            <p className="text-sm text-red-500">{error}</p>
+          </Card>
+        )}
+
+        {activeRoute && !loading && (
+          <motion.div
+            key={`${tier}-${distPref}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="flex flex-col gap-4"
+          >
+            <div className="flex justify-between items-center">
+              <span className="text-sm" style={{ color: 'var(--text-soft)' }}>{activeRoute.bars.length} ställen</span>
+              <span className="font-semibold text-lg" style={{ color: 'var(--accent-dark)' }}>
+                ~{activeRoute.estimated_total_cost_sek} kr totalt
+              </span>
+            </div>
+            {activeRoute.bars.map((bar, i) => (
+              <BarCard
+                key={bar.id}
+                bar={bar}
+                index={i}
+                drinks_here={activeRoute.estimated_drinks_per_bar}
+                drinks={perBarDistribution
+                  .map(c => ({ id: c.id, icon: c.icon, label: c.label, count: c.perBar[i] ?? 0 }))
+                  .filter(d => d.count > 0)}
+              />
+            ))}
+          </motion.div>
+        )}
+
+        {!loading && routes.length === 0 && !error && (
+          <div className="text-center py-12">
+            <p className="mb-4" style={{ color: 'var(--text-soft)' }}>Inga barer hittades med dessa inställningar.</p>
+            <Button onClick={() => setDistPref('any')} variant="ghost">
+              Utöka sökning
+            </Button>
+          </div>
+        )}
+      </div>
+    </main>
+  )
+}

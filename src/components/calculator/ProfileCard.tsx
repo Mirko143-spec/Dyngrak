@@ -15,14 +15,13 @@ export function ProfileCard() {
   const [saved, setSaved] = useState(profile)
 
   const submit = async () => {
-    const w = parseFloat(weight)
-    if (isNaN(w) || w < 40 || w > 250) {
-      setError('Ange en rimlig vikt (40–250 kg)')
+    const result = await updateProfile(parseFloat(weight), gender, name || undefined)
+    if (!result.ok) {
+      setError(result.error)
       return
     }
     setError('')
-    await updateProfile(w, gender, name || undefined)
-    setSaved({ ...(profile ?? { id: 'local', user_id: 'local', created_at: new Date().toISOString() }), name: name || undefined, weight_kg: w, gender })
+    setSaved(result.profile)
   }
 
   return (

@@ -9,6 +9,7 @@ import { BarCard } from '../components/bars/BarCard'
 import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { DRINK_CATEGORIES } from '../lib/drinks'
+import { buildPourPlan } from '../lib/pourPlan'
 import type { BudgetTier, DistancePreference, BarRoute } from '../types'
 
 const STOCKHOLM = { lat: 59.3293, lng: 18.0686 }
@@ -55,27 +56,11 @@ export default function Results() {
   const activeRoute = routes.find(r => r.tier === tier)
 
   const selectedCategories = DRINK_CATEGORIES.filter(c => sessionInput?.drink_categories?.includes(c.id))
-  // Split the remaining grams evenly across the chosen drink types, then round each up to whole units.
-  const categoryCounts = selectedCategories.map(c => ({
-    ...c,
-    count: Math.ceil(bacResult.total_grams_alcohol / selectedCategories.length / c.grams),
-  }))
-
-  // Spread each drink type's count as evenly as possible across the bars on the route.
-  // The starting bar for each type's "remainder" unit is staggered so a short route
-  // doesn't end up with a bar that gets none of any type.
-  function distributeAcrossBars(count: number, bars: number, offset: number): number[] {
-    if (bars <= 0) return []
-    const base = Math.floor(count / bars)
-    const remainder = count % bars
-    return Array.from({ length: bars }, (_, i) => base + ((i - offset + bars) % bars < remainder ? 1 : 0))
-  }
-
-  const barCount = activeRoute?.bars.length ?? 0
-  const perBarDistribution = categoryCounts.map((c, i) => ({
-    ...c,
-    perBar: distributeAcrossBars(c.count, barCount, i),
-  }))
+  const pourPlan = buildPourPlan({
+    totalGramsAlcohol: bacResult.total_grams_alcohol,
+    categories: selectedCategories,
+    bars: activeRoute?.bars ?? [],
+  })
 
   return (
     <main className="min-h-screen pb-16" style={{ background: 'var(--bg)' }}>
@@ -88,9 +73,9 @@ export default function Results() {
             <strong style={{ color: '#3f8a5c' }}>{bacResult.additional_drinks_needed} standardglas</strong> till
           </p>
 
-          {categoryCounts.length > 0 && (
+          {pourPlan.categories.length > 0 && (
             <div className="flex flex-wrap gap-2">
-              {categoryCounts.map(c => (
+              {pourPlan.categories.map(c => (
                 <span
                   key={c.id}
                   className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-sm font-medium"
@@ -147,15 +132,13 @@ export default function Results() {
                 ~{activeRoute.estimated_total_cost_sek} kr totalt
               </span>
             </div>
-            {activeRoute.bars.map((bar, i) => (
+            {pourPlan.stops.map(({ bar, drinks }, i) => (
               <BarCard
                 key={bar.id}
                 bar={bar}
                 index={i}
                 drinks_here={activeRoute.estimated_drinks_per_bar}
-                drinks={perBarDistribution
-                  .map(c => ({ id: c.id, icon: c.icon, label: c.label, count: c.perBar[i] ?? 0 }))
-                  .filter(d => d.count > 0)}
+                drinks={drinks}
               />
             ))}
           </motion.div>

@@ -17,7 +17,7 @@ const DISTANCE_RADIUS: Record<DistancePreference, number> = {
 const TIER_PRICE_LEVELS: Record<BudgetTier, number[]> = {
   cheap: [1, 2],
   medium: [2, 3],
-  expensive: [1, 2],
+  expensive: [3],
 }
 
 export async function generateRoutes(params: RouteParams): Promise<BarRoute[]> {

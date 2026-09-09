@@ -51,9 +51,6 @@ export interface MatchInput {
 /** Max antal barer som skickas till LLM:en (håller token-kostnad nere). */
 const MAX_BARS_TO_LLM = 10
 
-/** Lärarens API-konfiguration läses från Vite-miljövariabler. */
-const API_KEY = import.meta.env.VITE_LLM_API_KEY as string
-const API_URL = import.meta.env.VITE_LLM_API_URL as string
 
 // ─── Hjälpfunktioner ──────────────────────────────────────────────────────────
 
@@ -132,7 +129,10 @@ function parseResponse(raw: string): LlmMatchResult {
  * @throws Om API-anropet misslyckas eller LLM:en returnerar ogiltig JSON
  */
 export async function matchBars(input: MatchInput): Promise<LlmMatchResult> {
-  if (!API_KEY?.trim() || !API_URL?.trim()) {
+  const apiKey = (import.meta.env.VITE_LLM_API_KEY as string | undefined)?.trim() ?? ''
+  const apiUrl = (import.meta.env.VITE_LLM_API_URL as string | undefined)?.trim() ?? ''
+
+  if (!apiKey || !apiUrl) {
     throw new Error(
       'matcher: VITE_LLM_API_KEY eller VITE_LLM_API_URL saknas i miljövariablerna'
     )
@@ -157,20 +157,37 @@ export async function matchBars(input: MatchInput): Promise<LlmMatchResult> {
     generationConfig: {
       responseMimeType: 'application/json',
       temperature: 0.4,
-      maxOutputTokens: 1024,
+      maxOutputTokens: 4096,
     },
   }
 
-  const response = await fetch(`${API_URL}?key=${API_KEY}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(requestBody),
-  })
+  let response: Response | null = null
+  const MAX_RETRIES = 2
 
-  if (!response.ok) {
-    const errorText = await response.text().catch(() => '<tomt svar>')
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    response = await fetch(`${apiUrl}?key=${apiKey}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(requestBody),
+    })
+
+    if (response.ok) break
+
+    // Tillfällig överbelastning hos Gemini (503) – vänta och försök igen
+    if (response.status === 503 && attempt < MAX_RETRIES) {
+      await new Promise(res => setTimeout(res, 1500 * (attempt + 1)))
+      continue
+    }
+
+    break
+  }
+
+  if (!response || !response.ok) {
+    const status = response?.status ?? 0
+    const statusText = response?.statusText ?? 'Unknown'
+    const errorText = (await response?.text().catch(() => '<tomt svar>')) ?? '<tomt svar>'
     throw new Error(
-      `matcher: API-anrop misslyckades (${response.status} ${response.statusText}): ${errorText.slice(0, 300)}`
+      `matcher: API-anrop misslyckades (${status} ${statusText}): ${errorText.slice(0, 300)}`
     )
   }
 

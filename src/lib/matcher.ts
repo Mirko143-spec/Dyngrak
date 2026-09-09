@@ -132,7 +132,7 @@ function parseResponse(raw: string): LlmMatchResult {
  * @throws Om API-anropet misslyckas eller LLM:en returnerar ogiltig JSON
  */
 export async function matchBars(input: MatchInput): Promise<LlmMatchResult> {
-  if (!API_KEY || !API_URL) {
+  if (!API_KEY?.trim() || !API_URL?.trim()) {
     throw new Error(
       'matcher: VITE_LLM_API_KEY eller VITE_LLM_API_URL saknas i miljövariablerna'
     )

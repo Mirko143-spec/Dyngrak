@@ -70,6 +70,7 @@ function buildUserPrompt(input: MatchInput): string {
       price_level: b.price_level,
       distance_m: Math.round(b.distance_m),
       estimated_drink_price_sek: b.estimated_drink_price_sek,
+      vibes: b.vibes ?? [],
     }))
 
   return JSON.stringify({

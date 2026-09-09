@@ -17,7 +17,7 @@ ABSOLUT FÖRBUD:
 
 DU SKA:
 - Rangordna barerna utifrån: budget (price_level), avstånd (distance_m),
-  betyg (rating) och de dryckeskategorier användaren föredrar.
+  betyg (rating), stämning/vibe (vibes) och de dryckeskategorier användaren föredrar.
 - Ge varje rekommenderad bar ett kort, naturligt motiveringstext på svenska (max 2 meningar).
 - Returnera EXAKT följande JSON-schema och inget annat:
 

@@ -59,6 +59,7 @@ export interface Bar {
   lng: number
   google_maps_url: string
   estimated_drink_price_sek: number
+  vibes?: string[]
 }
 
 export interface BarRoute {

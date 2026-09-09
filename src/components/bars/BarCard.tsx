@@ -13,9 +13,10 @@ interface BarCardProps {
   index: number
   drinks_here: number
   drinks?: DrinkAtBar[]
+  aiReason?: string
 }
 
-export function BarCard({ bar, index, drinks_here, drinks }: BarCardProps) {
+export function BarCard({ bar, index, drinks_here, drinks, aiReason }: BarCardProps) {
   const distLabel =
     bar.distance_m < 1000
       ? `${Math.round(bar.distance_m)} m`
@@ -35,14 +36,32 @@ export function BarCard({ bar, index, drinks_here, drinks }: BarCardProps) {
       className="block rounded-xl p-5 transition-colors group no-underline border"
       style={{ background: 'var(--card)', borderColor: 'var(--card-border)', boxShadow: 'var(--shadow-card)' }}
     >
-      <div className="flex justify-between items-start mb-2">
+      <div className="flex justify-between items-start mb-1">
         <h3 className="font-semibold text-lg">{bar.name}</h3>
         <span className="text-sm ml-2 shrink-0" style={{ color: 'var(--accent-dark)' }}>
           {bar.rating.toFixed(1)} {stars.slice(0, 1)}
         </span>
       </div>
 
-      <p className="text-sm mb-4" style={{ color: 'var(--text-faint)' }}>{bar.address}</p>
+      <p className="text-sm mb-3" style={{ color: 'var(--text-faint)' }}>{bar.address}</p>
+
+      {bar.vibes && bar.vibes.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 mb-3">
+          {bar.vibes.map(vibe => (
+            <span
+              key={vibe}
+              className="text-[11px] px-2 py-0.5 rounded-full font-medium"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                color: 'var(--text-soft)',
+                border: '1px solid var(--card-border)',
+              }}
+            >
+              #{vibe}
+            </span>
+          ))}
+        </div>
+      )}
 
       {drinks && drinks.length > 0 && (
         <div className="flex flex-wrap gap-1.5 mb-3">
@@ -71,6 +90,20 @@ export function BarCard({ bar, index, drinks_here, drinks }: BarCardProps) {
         )}
         <span style={{ color: 'var(--text-soft)' }}>≈{bar.estimated_drink_price_sek} kr/glas</span>
       </div>
+
+      {aiReason && (
+        <div
+          className="mt-3.5 p-3 rounded-lg text-xs leading-relaxed border flex items-start gap-2"
+          style={{
+            background: 'rgba(217, 119, 6, 0.08)',
+            borderColor: 'rgba(217, 119, 6, 0.25)',
+            color: 'var(--text)',
+          }}
+        >
+          <span className="text-amber-500 font-semibold shrink-0">✨ AI-tips:</span>
+          <span className="italic">{aiReason}</span>
+        </div>
+      )}
     </motion.a>
   )
 }

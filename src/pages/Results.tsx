@@ -10,6 +10,7 @@ import { Card } from '../components/ui/Card'
 import { Button } from '../components/ui/Button'
 import { DRINK_CATEGORIES } from '../lib/drinks'
 import { buildPourPlan } from '../lib/pourPlan'
+import { matchBars } from '../lib/matcher'
 import type { BudgetTier, DistancePreference, BarRoute } from '../types'
 
 const STOCKHOLM = { lat: 59.3293, lng: 18.0686 }
@@ -23,6 +24,10 @@ export default function Results() {
   const [tier, setTier] = useState<BudgetTier>('cheap')
   const [distPref, setDistPref] = useState<DistancePreference>(sessionInput?.distance_pref ?? 'near')
   const [userPos, setUserPos] = useState<{ lat: number; lng: number }>(STOCKHOLM)
+
+  // AI-matchningstillstånd
+  const [aiReasons, setAiReasons] = useState<Record<string, string>>({})
+  const [aiLoading, setAiLoading] = useState(false)
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -44,6 +49,43 @@ export default function Results() {
       .finally(() => setLoading(false))
   }, [distPref, userPos, bacResult])
 
+  const activeRoute = routes.find(r => r.tier === tier)
+
+  // Hämta AI-rekommendationer för den valda rutten i bakgrunden
+  useEffect(() => {
+    if (!bacResult || !activeRoute || activeRoute.bars.length === 0) return
+
+    let isSubscribed = true
+    setAiLoading(true)
+
+    matchBars({
+      currentBac: bacResult.current_bac,
+      targetBac: bacResult.target_bac,
+      budget: tier,
+      distancePref: distPref,
+      drinkCategories: sessionInput?.drink_categories ?? [],
+      bars: activeRoute.bars,
+    })
+      .then(res => {
+        if (!isSubscribed) return
+        const map: Record<string, string> = {}
+        for (const rec of res.recommendations) {
+          map[rec.bar_id] = rec.reason
+        }
+        setAiReasons(map)
+      })
+      .catch(err => {
+        console.warn('Lager B (AI matcher) felade, fallback till regelbaserad rutt:', err)
+      })
+      .finally(() => {
+        if (isSubscribed) setAiLoading(false)
+      })
+
+    return () => {
+      isSubscribed = false
+    }
+  }, [activeRoute, bacResult, tier, distPref, sessionInput?.drink_categories])
+
   if (!bacResult) {
     return (
       <main className="min-h-screen flex flex-col items-center justify-center gap-4 p-4" style={{ background: 'var(--bg)' }}>
@@ -52,8 +94,6 @@ export default function Results() {
       </main>
     )
   }
-
-  const activeRoute = routes.find(r => r.tier === tier)
 
   const selectedCategories = DRINK_CATEGORIES.filter(c => sessionInput?.drink_categories?.includes(c.id))
   const pourPlan = buildPourPlan({
@@ -132,6 +172,21 @@ export default function Results() {
                 ~{activeRoute.estimated_total_cost_sek} kr totalt
               </span>
             </div>
+
+            {aiLoading && (
+              <div
+                className="flex items-center gap-2.5 py-2.5 px-3.5 rounded-lg text-xs font-medium border"
+                style={{
+                  background: 'rgba(217, 119, 6, 0.05)',
+                  borderColor: 'rgba(217, 119, 6, 0.2)',
+                  color: 'var(--text-soft)',
+                }}
+              >
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
+                <span>AI analyserar stämning och väljer motiveringar...</span>
+              </div>
+            )}
+
             {pourPlan.stops.map(({ bar, drinks }, i) => (
               <BarCard
                 key={bar.id}
@@ -139,6 +194,7 @@ export default function Results() {
                 index={i}
                 drinks_here={activeRoute.estimated_drinks_per_bar}
                 drinks={drinks}
+                aiReason={aiReasons[bar.id]}
               />
             ))}
           </motion.div>

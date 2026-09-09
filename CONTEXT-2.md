@@ -14,6 +14,7 @@ LLM-funktion som matchar användaren mot barer i Stockholm utifrån:
 - Budget (billig / medel / dyr)
 - Avståndspreferens (nära / längre / spelar ingen roll)
 - Valda dryckeskategorier (Öl, Vin, Shot, Cider, Cocktail)
+- Stämning och vibe-taggar (fest, mysigt, craft-öl, vin, etc.)
 
 ---
 
@@ -33,15 +34,16 @@ LLM-funktion som matchar användaren mot barer i Stockholm utifrån:
 
 ---
 
-### Lager B – LLM-matchning mot bardatabas ← EJ IMPLEMENTERAT
+### Lager B – LLM-matchning mot bardatabas ✅ IMPLEMENTERAT OCH VERIFIERAT
 
 **Mål:** En LLM (via lärarens API) tar emot användarens BAC-projektion, målpromille,
-budget och avståndspreferens och returnerar en rankad lista med rekommenderade barer i JSON.
+budget, avståndspreferens och valda dryckeskategorier tillsammans med filtrerade barer
+(inklusive deras vibe-taggar) och returnerar en rankad lista med rekommenderade barer i JSON.
 
 | Fil | Status | Ansvar |
 |-----|--------|--------|
-| `src/lib/matcher.ts` | ✅ Klar | Anropar LLM-API med systemprompt + användardata, parsear JSON-svar |
-| `src/lib/systemPrompt.ts` | ✅ Klar | Systemprompt som instruerar LLM:en om vad den ska och inte ska göra |
+| `src/lib/matcher.ts` | ✅ Klar & Verifierad | Anropar LLM-API med systemprompt + användardata, hanterar retries och parsear JSON-svar |
+| `src/lib/systemPrompt.ts` | ✅ Klar & Verifierad | Systemprompt som instruerar LLM:en om vad den ska och inte ska göra (inkl. stämning/vibes) |
 
 **LLM-svar ska alltid vara JSON** med följande schema (att definiera i `matcher.ts`):
 ```json
@@ -62,10 +64,8 @@ budget och avståndspreferens och returnerar en rankad lista med rekommenderade 
 
 | Fil | Status | Innehåll |
 |-----|--------|---------|
-| `src/lib/places.ts` | 25 hårdkodade mock-barer | Namn, adress, GPS, price_level (1–3), rating, estimerat drinkpris |
-| `/data/bars.json` | Saknas | Tänkt extern JSON-fil med vibe-taggar (fest, mysigt, sport, m.m.) |
-
-**OBS:** Vibe-taggar saknas helt i nuvarande datastruktur — behövs för att LLM:en ska kunna matcha stämning.
+| `src/lib/places.ts` | ✅ Klar | Läser från `/data/bars.json`, beräknar avstånd och filtrerar på radius/pris |
+| `/data/bars.json` | ✅ Klar | 25 barer i Stockholm med namn, adress, GPS, price_level, rating, pris och `vibes` |
 
 ---
 
@@ -73,8 +73,9 @@ budget och avståndspreferens och returnerar en rankad lista med rekommenderade 
 
 | Fil | Status |
 |-----|--------|
-| `src/pages/Landing.tsx` | Påbörjad – fördrinksinmatning, profil, starttid |
-| `src/pages/Results.tsx` | Påbörjad – visar bar-rutter och pour plan |
+| `src/pages/Landing.tsx` | ✅ Klar – fördrinksinmatning, profil, starttid, mål och dryckesval |
+| `src/pages/Results.tsx` | ✅ Klar – visar bar-rutter, pour plan, vibe-taggar och live AI-tips från matcher.ts |
+| `src/components/bars/BarCard.tsx` | ✅ Klar – renderar barinfo, vibe-piller (`#mysigt`) och `aiReason` ("✨ AI-tips") |
 | `src/components/` | Komponentmappar: bars, calculator, hero, layout, ui |
 | `src/stores/userStore.ts` | Zustand-store för användarprofil och session |
 
@@ -105,14 +106,12 @@ Undvik: "drink types" (tvetydigt mellan de två)
 - [x] Widmark-formeln implementerad och testad (widmark.ts)
 - [x] BAC-projektion implementerad och testad (bacProjection.ts)
 - [x] Pour plan implementerad och testad (pourPlan.ts)
-- [x] Bardatabas: 25 mock-barer i places.ts
+- [x] Bardatabas externaliserad till /data/bars.json med 25 barer och vibe-taggar
 - [x] Bar-route-generering: regelbaserad filtrering i recommendations.ts
-- [x] Frontend påbörjad: Landing + Results + komponenter
+- [x] LLM-integration (Lager B): matcher.ts implementerad och verifierad mot Gemini API
+- [x] Systemprompt: skriven och testad med stöd för stämning/vibes (systemPrompt.ts)
+- [x] Frontend: Landing + Results + BarCard uppdaterade med vibe-taggar och AI-rekommendationer
 - [x] Tester: bacProjection.test.ts, pourPlan.test.ts, places.test.ts, userStore.test.ts
-- [ ] Vibe-taggar på barer saknas
-- [x] LLM-integration (Lager B): matcher.ts implementerad
-- [x] Systemprompt: skriven (systemPrompt.ts)
-- [ ] /data/bars.json: barlistan är hårdkodad i .ts, ej externaliserad
 
 ---
 
@@ -126,8 +125,6 @@ Undvik: "drink types" (tvetydigt mellan de två)
 
 ## Nästa steg (prioritetsordning)
 
-1. **Lägg till vibe-taggar** på mock-barerna i places.ts (t.ex. vibes: ['fest', 'mysigt'])
-2. **Skriv systemprompt** i src/lib/systemPrompt.ts — instruera LLM att returnera JSON, aldrig räkna promille
-3. **Implementera matcher.ts** — anrop till lärarens API med BAC-data + barlista + systemprompt
-4. **Testa matchningen** mot 3–4 olika användarscenarier (nykter, lätt berusad, hög budget, låg budget)
-5. **Externalisera bardatan** till /data/bars.json om LLM:en ska kunna läsa den direkt
+1. **Användartestning och finjustering av gränssnittet** (t.ex. filter på specifika vibes i sökningen)
+2. **Ytterligare barer och områden** (utöka /data/bars.json med fler stadsdelar utanför Södermalm/City)
+3. **Persistens eller delning av kvällens bar-rutt** (t.ex. exportera eller spara rutt i session/URL)

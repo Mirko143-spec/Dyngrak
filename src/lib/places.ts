@@ -1,16 +1,20 @@
 import { haversineDistance } from './distance'
 import type { Bar } from '../types'
 
+// This is the seam: `getMockBars` is a placeholder adapter using a hardcoded
+// Stockholm dataset. It's meant to be swapped for a real place-finding/pricing
+// adapter (e.g. an AI-driven one) that satisfies the same fetchNearbyBars
+// contract — including honoring radius_m and price_levels the way this one does.
 export async function fetchNearbyBars(
   userLat: number,
   userLng: number,
-  _radius_m: number,
+  radius_m: number,
   price_levels: number[]
 ): Promise<Bar[]> {
-  return getMockBars(userLat, userLng, price_levels)
+  return getMockBars(userLat, userLng, radius_m, price_levels)
 }
 
-function getMockBars(userLat: number, userLng: number, price_levels: number[]): Bar[] {
+function getMockBars(userLat: number, userLng: number, radius_m: number, price_levels: number[]): Bar[] {
   const mockData: Bar[] = [
     // price_level 1 – billiga barer
     { id: 'm1',  name: 'Kvarnen',             address: 'Tjärhovsgatan 4, Södermalm',       rating: 4.3, price_level: 1, distance_m: 0, lat: 59.3145, lng: 18.0765, google_maps_url: 'https://maps.google.com/?q=Kvarnen+Stockholm',             estimated_drink_price_sek: 65 },
@@ -47,5 +51,6 @@ function getMockBars(userLat: number, userLng: number, price_levels: number[]): 
   return mockData
     .filter(b => price_levels.includes(b.price_level))
     .map(b => ({ ...b, distance_m: haversineDistance(userLat, userLng, b.lat, b.lng) }))
+    .filter(b => b.distance_m <= radius_m)
     .sort((a, b) => a.distance_m - b.distance_m)
 }

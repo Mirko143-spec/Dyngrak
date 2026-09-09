@@ -8,18 +8,9 @@ import { LiveBacCard } from '../components/calculator/LiveBacCard'
 import { InfoCard } from '../components/calculator/InfoCard'
 import { useUserStore } from '../stores/userStore'
 import { useSessionStore } from '../stores/sessionStore'
-import { PRE_DRINK_ITEMS } from '../lib/drinks'
-import { METABOLISM_RATE, GRAMS_PER_STANDARD_DRINK, calculateCurrentBacFromGrams, calculateTargetDrinks } from '../lib/widmark'
+import { projectBac } from '../lib/bacProjection'
+import { GRAMS_PER_STANDARD_DRINK, calculateTargetDrinks } from '../lib/widmark'
 import type { DistancePreference } from '../types'
-
-function parseTimeToday(time: string, now: Date): Date | null {
-  if (!time) return null
-  const [h, m] = time.split(':').map(Number)
-  if (Number.isNaN(h) || Number.isNaN(m)) return null
-  const d = new Date(now)
-  d.setHours(h, m, 0, 0)
-  return d
-}
 
 export default function Landing() {
   const navigate = useNavigate()
@@ -39,39 +30,17 @@ export default function Landing() {
     return () => clearInterval(id)
   }, [])
 
-  const gramsConsumed = useMemo(
-    () => PRE_DRINK_ITEMS.reduce((sum, item) => sum + (quantities[item.id] ?? 0) * item.grams, 0),
-    [quantities]
+  const projection = useMemo(
+    () => projectBac({ preDrinkQuantities: quantities, startTime, now, profile }),
+    [quantities, startTime, now, profile]
   )
-
-  const hoursSinceStart = useMemo(() => {
-    const started = parseTimeToday(startTime, now)
-    if (!started) return 0
-    const diffH = (now.getTime() - started.getTime()) / 3600000
-    return Math.max(0, diffH)
-  }, [startTime, now])
-
-  const weight = profile?.weight_kg ?? 80
-  const gender = profile?.gender ?? 'male'
-
-  const currentBac = useMemo(
-    () =>
-      calculateCurrentBacFromGrams({
-        grams_consumed: gramsConsumed,
-        weight_kg: weight,
-        gender,
-        hours_since_first_drink: hoursSinceStart,
-      }),
-    [gramsConsumed, weight, gender, hoursSinceStart]
-  )
-
-  const metabolizedPct = METABOLISM_RATE * hoursSinceStart
+  const { currentBac, gramsConsumed, hoursSinceStart, metabolizedPct, startedAt, weightKg, gender } = projection
 
   const handleCalculate = () => {
     const calc = calculateTargetDrinks({
       current_bac: currentBac,
       target_bac: target,
-      weight_kg: weight,
+      weight_kg: weightKg,
       gender,
       hours_planned: hours,
     })
@@ -80,7 +49,7 @@ export default function Landing() {
     setSessionInput({
       pre_drink:
         gramsConsumed > 0
-          ? { standard_drinks: gramsConsumed / GRAMS_PER_STANDARD_DRINK, started_at: parseTimeToday(startTime, now) ?? now }
+          ? { standard_drinks: gramsConsumed / GRAMS_PER_STANDARD_DRINK, started_at: startedAt ?? now }
           : null,
       target_bac: target,
       hours_planned: hours,

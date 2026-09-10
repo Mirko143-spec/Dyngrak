@@ -20,16 +20,51 @@ const TIER_PRICE_LEVELS: Record<BudgetTier, number[]> = {
   expensive: [3],
 }
 
+async function fetchBarsWithAutoExpand(
+  userLat: number,
+  userLng: number,
+  initialRadius: number,
+  priceLevels: number[],
+  minCount: number,
+  ratingThreshold?: number
+): Promise<Bar[]> {
+  let bars = await fetchNearbyBars(userLat, userLng, initialRadius, priceLevels)
+  if (ratingThreshold) {
+    bars = bars.filter(b => b.rating >= ratingThreshold).sort((a, b) => b.rating - a.rating)
+  }
+
+  // Täckningsgaranti: expandera radie om färre än minCount barer hittas
+  if (bars.length < minCount && initialRadius < 2000) {
+    let expanded = await fetchNearbyBars(userLat, userLng, 2000, priceLevels)
+    if (ratingThreshold) {
+      expanded = expanded.filter(b => b.rating >= ratingThreshold).sort((a, b) => b.rating - a.rating)
+    }
+    if (expanded.length > bars.length) {
+      bars = expanded
+    }
+  }
+
+  if (bars.length < minCount && initialRadius < 5000) {
+    let expanded = await fetchNearbyBars(userLat, userLng, 5000, priceLevels)
+    if (ratingThreshold) {
+      expanded = expanded.filter(b => b.rating >= ratingThreshold).sort((a, b) => b.rating - a.rating)
+    }
+    if (expanded.length > bars.length) {
+      bars = expanded
+    }
+  }
+
+  return bars
+}
+
 export async function generateRoutes(params: RouteParams): Promise<BarRoute[]> {
   const { userLat, userLng, bacResult, distancePref } = params
   const radius = DISTANCE_RADIUS[distancePref]
 
   const [cheapBars, mediumBars, expensiveBars] = await Promise.all([
-    fetchNearbyBars(userLat, userLng, radius, TIER_PRICE_LEVELS.cheap),
-    fetchNearbyBars(userLat, userLng, radius, TIER_PRICE_LEVELS.medium),
-    fetchNearbyBars(userLat, userLng, radius, TIER_PRICE_LEVELS.expensive).then((bars: Bar[]) =>
-      bars.filter(b => b.rating >= 4.2).sort((a, b) => b.rating - a.rating)
-    ),
+    fetchBarsWithAutoExpand(userLat, userLng, radius, TIER_PRICE_LEVELS.cheap, 3),
+    fetchBarsWithAutoExpand(userLat, userLng, radius, TIER_PRICE_LEVELS.medium, 3),
+    fetchBarsWithAutoExpand(userLat, userLng, radius, TIER_PRICE_LEVELS.expensive, 1, 4.2),
   ])
 
   const tiers: Array<{ tier: BudgetTier; bars: Bar[]; min_count: number }> = [
@@ -53,3 +88,4 @@ export async function generateRoutes(params: RouteParams): Promise<BarRoute[]> {
       }
     })
 }
+

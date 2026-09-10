@@ -14,6 +14,11 @@ export async function fetchNearbyBars(
   return getMockBars(userLat, userLng, radius_m, price_levels)
 }
 
+export function isWithinCoverage(userLat: number, userLng: number, maxRadiusMeters: number = 5000): boolean {
+  const mockBars: Omit<Bar, 'distance_m'>[] = barsJson as unknown as Omit<Bar, 'distance_m'>[]
+  return mockBars.some(b => haversineDistance(userLat, userLng, b.lat, b.lng) <= maxRadiusMeters)
+}
+
 function getMockBars(userLat: number, userLng: number, radius_m: number, price_levels: number[]): Bar[] {
   const mockData: Bar[] = (barsJson as unknown as Omit<Bar, 'distance_m'>[]).map(b => ({
     ...b,
@@ -26,3 +31,4 @@ function getMockBars(userLat: number, userLng: number, radius_m: number, price_l
     .filter(b => b.distance_m <= radius_m)
     .sort((a, b) => a.distance_m - b.distance_m)
 }
+

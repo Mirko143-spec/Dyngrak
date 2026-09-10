@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest'
-import { fetchNearbyBars } from './places'
+import { fetchNearbyBars, isWithinCoverage } from './places'
 
 // Roughly the middle of Stockholm, where the mock bars are clustered.
 const STOCKHOLM = { lat: 59.3293, lng: 18.0686 }
+const GOTHENBURG = { lat: 57.7088, lng: 11.9746 }
 
 describe('fetchNearbyBars', () => {
   it('excludes bars outside the requested radius', async () => {
@@ -32,3 +33,14 @@ describe('fetchNearbyBars', () => {
     expect(bars).toEqual([])
   })
 })
+
+describe('isWithinCoverage', () => {
+  it('returns true for coordinates within Stockholm bar radius', () => {
+    expect(isWithinCoverage(STOCKHOLM.lat, STOCKHOLM.lng, 5000)).toBe(true)
+  })
+
+  it('returns false for coordinates far away from Stockholm (e.g. Gothenburg)', () => {
+    expect(isWithinCoverage(GOTHENBURG.lat, GOTHENBURG.lng, 5000)).toBe(false)
+  })
+})
+

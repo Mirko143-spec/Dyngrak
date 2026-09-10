@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useSessionStore } from '../stores/sessionStore'
 import { generateRoutes } from '../lib/recommendations'
+import { isWithinCoverage } from '../lib/places'
 import { TierSelector } from '../components/bars/TierSelector'
 import { DistanceFilter } from '../components/bars/DistanceFilter'
 import { BarCard } from '../components/bars/BarCard'
@@ -23,31 +24,56 @@ export default function Results() {
   const [error, setError] = useState('')
   const [tier, setTier] = useState<BudgetTier>('cheap')
   const [distPref, setDistPref] = useState<DistancePreference>(sessionInput?.distance_pref ?? 'near')
-  const [userPos, setUserPos] = useState<{ lat: number; lng: number }>(STOCKHOLM)
+
+  // Geolokaliserings- & demolägestillstånd
+  const [realPos, setRealPos] = useState<{ lat: number; lng: number } | null>(null)
+  const [useDemoMode, setUseDemoMode] = useState<boolean>(true)
+  const [geoReason, setGeoReason] = useState<'denied' | 'out_of_range' | 'manual' | null>(null)
 
   // AI-matchningstillstånd
   const [aiReasons, setAiReasons] = useState<Record<string, string>>({})
   const [aiLoading, setAiLoading] = useState(false)
 
   useEffect(() => {
+    if (!navigator.geolocation) {
+      setUseDemoMode(true)
+      setGeoReason('denied')
+      return
+    }
+
     navigator.geolocation.getCurrentPosition(
-      pos => setUserPos({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-      () => {}
+      pos => {
+        const coords = { lat: pos.coords.latitude, lng: pos.coords.longitude }
+        setRealPos(coords)
+        if (isWithinCoverage(coords.lat, coords.lng, 5000)) {
+          setUseDemoMode(false)
+          setGeoReason(null)
+        } else {
+          setUseDemoMode(true)
+          setGeoReason('out_of_range')
+        }
+      },
+      () => {
+        setUseDemoMode(true)
+        setGeoReason('denied')
+      }
     )
   }, [])
+
+  const activePos = useDemoMode || !realPos ? STOCKHOLM : realPos
 
   useEffect(() => {
     if (!bacResult) return
     setLoading(true)
     setError('')
-    generateRoutes({ userLat: userPos.lat, userLng: userPos.lng, bacResult, distancePref: distPref })
+    generateRoutes({ userLat: activePos.lat, userLng: activePos.lng, bacResult, distancePref: distPref })
       .then(r => {
         setRoutes(r)
         if (r.length > 0) setTier(r[0].tier)
       })
       .catch(e => setError(e.message))
       .finally(() => setLoading(false))
-  }, [distPref, userPos, bacResult])
+  }, [distPref, activePos, bacResult])
 
   const activeRoute = routes.find(r => r.tier === tier)
 
@@ -129,6 +155,63 @@ export default function Results() {
           )}
         </motion.div>
 
+        {/* Demoläge Banner & Växling */}
+        {useDemoMode ? (
+          <motion.div
+            initial={{ opacity: 0, y: -5 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium flex flex-col sm:flex-row sm:items-center justify-between gap-3 border"
+            style={{
+              background: 'rgba(217, 119, 6, 0.08)',
+              borderColor: 'rgba(217, 119, 6, 0.25)',
+              color: 'var(--text)',
+            }}
+          >
+            <div className="flex items-start sm:items-center gap-2.5">
+              <span className="text-base shrink-0">📍</span>
+              <div>
+                <p className="font-semibold text-amber-500">Demoläge aktivt</p>
+                <p style={{ color: 'var(--text-soft)' }}>
+                  {geoReason === 'out_of_range'
+                    ? 'Inga barer i din omedelbara närhet — visar barer runt T-Centralen, Stockholm.'
+                    : geoReason === 'denied'
+                    ? 'Platsåtkomst ej tillgänglig — visar barer runt T-Centralen, Stockholm.'
+                    : 'Visar barer runt T-Centralen, Stockholm.'}
+                </p>
+              </div>
+            </div>
+            {realPos && isWithinCoverage(realPos.lat, realPos.lng, 5000) && (
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  setUseDemoMode(false)
+                  setGeoReason(null)
+                }}
+                className="w-auto text-xs py-1.5 px-3 shrink-0 self-start sm:self-auto"
+              >
+                Använd min GPS
+              </Button>
+            )}
+          </motion.div>
+        ) : (
+          <div className="mb-4 flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--text-soft)' }}>
+            <span className="flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block shrink-0" />
+              Använder din GPS-position
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                setUseDemoMode(true)
+                setGeoReason('manual')
+              }}
+              className="underline hover:text-[var(--text)] transition-colors cursor-pointer"
+            >
+              Växla till T-Centralen (demoläge)
+            </button>
+          </div>
+        )}
+
         <div className="mb-6">
           <p className="font-mono-label text-xs tracking-widest mb-3" style={{ color: 'var(--label)' }}>Avstånd</p>
           <DistanceFilter selected={distPref} onChange={setDistPref} />
@@ -161,7 +244,7 @@ export default function Results() {
 
         {activeRoute && !loading && (
           <motion.div
-            key={`${tier}-${distPref}`}
+            key={`${tier}-${distPref}-${useDemoMode}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="flex flex-col gap-4"
@@ -212,3 +295,4 @@ export default function Results() {
     </main>
   )
 }
+

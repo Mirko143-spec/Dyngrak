@@ -9,7 +9,12 @@
     "lng": 18.0765,
     "google_maps_url": "https://maps.google.com/?q=Kvarnen+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["öl", "mysigt", "klassiskt", "avslappnat"]
+    "vibes": [
+      "öl",
+      "mysigt",
+      "klassiskt",
+      "avslappnat"
+    ]
   },
   {
     "id": "m2",
@@ -21,19 +26,29 @@
     "lng": 18.0842,
     "google_maps_url": "https://maps.google.com/?q=Folkbaren+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["mysigt", "vin", "chill", "mingel"]
+    "vibes": [
+      "mysigt",
+      "vin",
+      "chill",
+      "mingel"
+    ]
   },
   {
     "id": "m3",
     "name": "The Dive Bar",
     "address": "Hornsgatan 93, Södermalm",
-    "rating": 4.0,
+    "rating": 4,
     "price_level": 1,
     "lat": 59.3155,
     "lng": 18.0523,
     "google_maps_url": "https://maps.google.com/?q=The+Dive+Bar+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["öl", "rock", "avslappnat", "billigt"]
+    "vibes": [
+      "öl",
+      "rock",
+      "avslappnat",
+      "billigt"
+    ]
   },
   {
     "id": "m4",
@@ -45,7 +60,12 @@
     "lng": 18.0482,
     "google_maps_url": "https://maps.google.com/?q=Hornhuset+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["fest", "dans", "uteservering", "stimmigt"]
+    "vibes": [
+      "fest",
+      "dans",
+      "uteservering",
+      "stimmigt"
+    ]
   },
   {
     "id": "m5",
@@ -57,19 +77,29 @@
     "lng": 18.0582,
     "google_maps_url": "https://maps.google.com/?q=Pub+Anchor+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["rock", "öl", "karaoke", "fest"]
+    "vibes": [
+      "rock",
+      "öl",
+      "karaoke",
+      "fest"
+    ]
   },
   {
     "id": "m6",
     "name": "Snotty Sounds Bar",
     "address": "Skånegatan 90, Södermalm",
-    "rating": 4.0,
+    "rating": 4,
     "price_level": 1,
     "lat": 59.3103,
     "lng": 18.0788,
     "google_maps_url": "https://maps.google.com/?q=Snotty+Sounds+Bar+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["indie", "öl", "mysigt", "kultur"]
+    "vibes": [
+      "indie",
+      "öl",
+      "mysigt",
+      "kultur"
+    ]
   },
   {
     "id": "m7",
@@ -81,7 +111,12 @@
     "lng": 18.0812,
     "google_maps_url": "https://maps.google.com/?q=Nada+Bar+Stockholm",
     "estimated_drink_price_sek": 65,
-    "vibes": ["mysigt", "cocktail", "intim", "hip"]
+    "vibes": [
+      "mysigt",
+      "cocktail",
+      "intim",
+      "hip"
+    ]
   },
   {
     "id": "m8",
@@ -93,7 +128,12 @@
     "lng": 18.0789,
     "google_maps_url": "https://maps.google.com/?q=Kafe+44+Stockholm",
     "estimated_drink_price_sek": 60,
-    "vibes": ["punk", "öl", "kultur", "avslappnat"]
+    "vibes": [
+      "punk",
+      "öl",
+      "kultur",
+      "avslappnat"
+    ]
   },
   {
     "id": "m9",
@@ -105,7 +145,12 @@
     "lng": 18.0604,
     "google_maps_url": "https://maps.google.com/?q=Akkurat+Stockholm",
     "estimated_drink_price_sek": 85,
-    "vibes": ["öl", "whisky", "klassiskt", "mysigt"]
+    "vibes": [
+      "öl",
+      "whisky",
+      "klassiskt",
+      "mysigt"
+    ]
   },
   {
     "id": "m10",
@@ -117,7 +162,12 @@
     "lng": 18.0759,
     "google_maps_url": "https://maps.google.com/?q=Sodra+Bar+Stockholm",
     "estimated_drink_price_sek": 85,
-    "vibes": ["utsikt", "cocktail", "fest", "sommar"]
+    "vibes": [
+      "utsikt",
+      "cocktail",
+      "fest",
+      "sommar"
+    ]
   },
   {
     "id": "m11",
@@ -129,7 +179,12 @@
     "lng": 18.0432,
     "google_maps_url": "https://maps.google.com/?q=Malarpaviljongen+Stockholm",
     "estimated_drink_price_sek": 90,
-    "vibes": ["uteservering", "vatten", "vin", "mysigt"]
+    "vibes": [
+      "uteservering",
+      "vatten",
+      "vin",
+      "mysigt"
+    ]
   },
   {
     "id": "m12",
@@ -141,7 +196,12 @@
     "lng": 18.0209,
     "google_maps_url": "https://maps.google.com/?q=Landet+Stockholm",
     "estimated_drink_price_sek": 85,
-    "vibes": ["klubb", "dans", "kultur", "indie"]
+    "vibes": [
+      "klubb",
+      "dans",
+      "kultur",
+      "indie"
+    ]
   },
   {
     "id": "m13",
@@ -153,7 +213,12 @@
     "lng": 18.0823,
     "google_maps_url": "https://maps.google.com/?q=Bonden+Stockholm",
     "estimated_drink_price_sek": 85,
-    "vibes": ["öl", "sport", "avslappnat", "afterwork"]
+    "vibes": [
+      "öl",
+      "sport",
+      "avslappnat",
+      "afterwork"
+    ]
   },
   {
     "id": "m14",
@@ -165,7 +230,12 @@
     "lng": 18.0353,
     "google_maps_url": "https://maps.google.com/?q=Debaser+Strand+Stockholm",
     "estimated_drink_price_sek": 90,
-    "vibes": ["livemusik", "fest", "dans", "konsert"]
+    "vibes": [
+      "livemusik",
+      "fest",
+      "dans",
+      "konsert"
+    ]
   },
   {
     "id": "m15",
@@ -177,19 +247,29 @@
     "lng": 18.0746,
     "google_maps_url": "https://maps.google.com/?q=Omnipollos+Hatt+Stockholm",
     "estimated_drink_price_sek": 95,
-    "vibes": ["craft-öl", "pizza", "mysigt", "populärt"]
+    "vibes": [
+      "craft-öl",
+      "pizza",
+      "mysigt",
+      "populärt"
+    ]
   },
   {
     "id": "m16",
     "name": "Koh Phangan",
     "address": "Skånegatan 57, Södermalm",
-    "rating": 4.0,
+    "rating": 4,
     "price_level": 2,
     "lat": 59.3108,
     "lng": 18.0764,
     "google_maps_url": "https://maps.google.com/?q=Koh+Phangan+Stockholm",
     "estimated_drink_price_sek": 85,
-    "vibes": ["tropiskt", "drinkar", "kul", "upplevelse"]
+    "vibes": [
+      "tropiskt",
+      "drinkar",
+      "kul",
+      "upplevelse"
+    ]
   },
   {
     "id": "m17",
@@ -201,7 +281,12 @@
     "lng": 18.0721,
     "google_maps_url": "https://maps.google.com/?q=Berns+Salonger+Stockholm",
     "estimated_drink_price_sek": 90,
-    "vibes": ["fest", "nattklubb", "elegant", "storslaget"]
+    "vibes": [
+      "fest",
+      "nattklubb",
+      "elegant",
+      "storslaget"
+    ]
   },
   {
     "id": "m18",
@@ -213,7 +298,12 @@
     "lng": 18.0861,
     "google_maps_url": "https://maps.google.com/?q=Tradgarden+Stockholm",
     "estimated_drink_price_sek": 85,
-    "vibes": ["sommarfest", "dans", "klubb", "uteservering"]
+    "vibes": [
+      "sommarfest",
+      "dans",
+      "klubb",
+      "uteservering"
+    ]
   },
   {
     "id": "m19",
@@ -225,7 +315,12 @@
     "lng": 18.0456,
     "google_maps_url": "https://maps.google.com/?q=Restaurang+AG+Stockholm",
     "estimated_drink_price_sek": 105,
-    "vibes": ["vin", "kött", "industriromantik", "finlir"]
+    "vibes": [
+      "vin",
+      "kött",
+      "industriromantik",
+      "finlir"
+    ]
   },
   {
     "id": "m20",
@@ -237,7 +332,12 @@
     "lng": 18.0801,
     "google_maps_url": "https://maps.google.com/?q=Bar+Agrikultur+Stockholm",
     "estimated_drink_price_sek": 110,
-    "vibes": ["naturvin", "intim", "matbar", "mysigt"]
+    "vibes": [
+      "naturvin",
+      "intim",
+      "matbar",
+      "mysigt"
+    ]
   },
   {
     "id": "m21",
@@ -246,10 +346,15 @@
     "rating": 4.5,
     "price_level": 3,
     "lat": 59.3303,
-    "lng": 18.0700,
+    "lng": 18.07,
     "google_maps_url": "https://maps.google.com/?q=Operakallaren+Stockholm",
     "estimated_drink_price_sek": 120,
-    "vibes": ["lyx", "cocktail", "klassiskt", "historiskt"]
+    "vibes": [
+      "lyx",
+      "cocktail",
+      "klassiskt",
+      "historiskt"
+    ]
   },
   {
     "id": "m22",
@@ -261,7 +366,12 @@
     "lng": 18.0525,
     "google_maps_url": "https://maps.google.com/?q=Lilla+Ego+Stockholm",
     "estimated_drink_price_sek": 110,
-    "vibes": ["gastronomi", "intim", "vin", "toppklass"]
+    "vibes": [
+      "gastronomi",
+      "intim",
+      "vin",
+      "toppklass"
+    ]
   },
   {
     "id": "m23",
@@ -273,7 +383,12 @@
     "lng": 18.0748,
     "google_maps_url": "https://maps.google.com/?q=Sturehof+Stockholm",
     "estimated_drink_price_sek": 115,
-    "vibes": ["klassiskt", "stureplan", "folkfest", "mingel"]
+    "vibes": [
+      "klassiskt",
+      "stureplan",
+      "folkfest",
+      "mingel"
+    ]
   },
   {
     "id": "m24",
@@ -285,7 +400,12 @@
     "lng": 18.0763,
     "google_maps_url": "https://maps.google.com/?q=Grodan+Stockholm",
     "estimated_drink_price_sek": 110,
-    "vibes": ["brasserie", "mingel", "afterwork", "klassiskt"]
+    "vibes": [
+      "brasserie",
+      "mingel",
+      "afterwork",
+      "klassiskt"
+    ]
   },
   {
     "id": "m25",
@@ -293,10 +413,4520 @@
     "address": "Hornstulls Strand 4, Södermalm",
     "rating": 4.3,
     "price_level": 3,
-    "lat": 59.3160,
+    "lat": 59.316,
     "lng": 18.0348,
     "google_maps_url": "https://maps.google.com/?q=Teatern+Hornstull+Stockholm",
     "estimated_drink_price_sek": 110,
-    "vibes": ["matmarknad", "öl", "chill", "brett utbud"]
+    "vibes": [
+      "matmarknad",
+      "öl",
+      "chill",
+      "brett utbud"
+    ]
+  },
+  {
+    "id": "m26",
+    "name": "Carmen",
+    "address": "Tjärhovsgatan 14, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3148,
+    "lng": 18.0754,
+    "google_maps_url": "https://maps.google.com/?q=Carmen+Stockholm",
+    "estimated_drink_price_sek": 55,
+    "vibes": [
+      "sunkhak",
+      "billigt",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m27",
+    "name": "International Bar",
+    "address": "Regeringsgatan 25, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3323,
+    "lng": 18.0689,
+    "google_maps_url": "https://maps.google.com/?q=International+Bar+Stockholm",
+    "estimated_drink_price_sek": 60,
+    "vibes": [
+      "billigt",
+      "centralt",
+      "öl",
+      "afterwork"
+    ]
+  },
+  {
+    "id": "m28",
+    "name": "Lion Bar",
+    "address": "Kornhamnstorg 61, Gamla Stan",
+    "rating": 3.7,
+    "price_level": 1,
+    "lat": 59.3232,
+    "lng": 18.0722,
+    "google_maps_url": "https://maps.google.com/?q=Lion+Bar+Kornhamnstorg+Stockholm",
+    "estimated_drink_price_sek": 49,
+    "vibes": [
+      "billigt",
+      "öl",
+      "sunkhak",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m29",
+    "name": "Oliver Twist",
+    "address": "Repslagargatan 6, Södermalm",
+    "rating": 4.3,
+    "price_level": 2,
+    "lat": 59.3173,
+    "lng": 18.0708,
+    "google_maps_url": "https://maps.google.com/?q=Oliver+Twist+Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "pub",
+      "klassiskt",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m30",
+    "name": "Wirströms Pub",
+    "address": "Stora Nygatan 13, Gamla Stan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3248,
+    "lng": 18.0694,
+    "google_maps_url": "https://maps.google.com/?q=Wirstroms+Pub+Stockholm",
+    "estimated_drink_price_sek": 80,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "klassiskt"
+    ]
+  },
+  {
+    "id": "m31",
+    "name": "Tweed",
+    "address": "Lilla Nygatan 5, Gamla Stan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3245,
+    "lng": 18.0683,
+    "google_maps_url": "https://maps.google.com/?q=Tweed+Stockholm",
+    "estimated_drink_price_sek": 145,
+    "vibes": [
+      "cocktail",
+      "ombonat",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m32",
+    "name": "Riche",
+    "address": "Birger Jarlsgatan 4, Östermalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3336,
+    "lng": 18.0739,
+    "google_maps_url": "https://maps.google.com/?q=Riche+Stockholm",
+    "estimated_drink_price_sek": 135,
+    "vibes": [
+      "inneställe",
+      "puls",
+      "mingel",
+      "klassiskt"
+    ]
+  },
+  {
+    "id": "m33",
+    "name": "Pharmarium",
+    "address": "Stortorget 7, Gamla Stan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.325,
+    "lng": 18.0707,
+    "google_maps_url": "https://maps.google.com/?q=Pharmarium+Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "konceptuellt",
+      "hantverk",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m34",
+    "name": "Cadierbaren (Grand Hôtel)",
+    "address": "Södra Blasieholmshamnen 8, Blasieholmen",
+    "rating": 4.6,
+    "price_level": 3,
+    "lat": 59.3298,
+    "lng": 18.0754,
+    "google_maps_url": "https://maps.google.com/?q=Cadierbaren+Grand+Hotel+Stockholm",
+    "estimated_drink_price_sek": 175,
+    "vibes": [
+      "lyx",
+      "utsikt",
+      "exklusivt",
+      "hotellbar"
+    ]
+  },
+  {
+    "id": "m35",
+    "name": "Le Hibou",
+    "address": "Nybrogatan 38, Östermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3375,
+    "lng": 18.0782,
+    "google_maps_url": "https://maps.google.com/?q=Le+Hibou+Stockholm",
+    "estimated_drink_price_sek": 165,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "exklusivt",
+      "cocktail"
+    ]
+  },
+  {
+    "id": "m36",
+    "name": "Hirschenkeller Hornsgatan",
+    "address": "Hornsgatan 49, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3172,
+    "lng": 18.0615,
+    "google_maps_url": "https://google.com",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "öl",
+      "avslappnat",
+      "husman"
+    ]
+  },
+  {
+    "id": "m37",
+    "name": "Lion Bar Sveavägen",
+    "address": "Sveavägen 74, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3312,
+    "lng": 18.0617,
+    "google_maps_url": "https://maps.google.com/?q=Lion%20Bar%20Sveav%C3%A4gen%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m38",
+    "name": "Lion Bar Kornhamnstorg",
+    "address": "Kornhamnstorg 61, Gamla Stan",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3194,
+    "lng": 18.0713,
+    "google_maps_url": "https://maps.google.com/?q=Lion%20Bar%20Kornhamnstorg%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m39",
+    "name": "Lion Bar Hornsgatan",
+    "address": "Hornsgatan 154, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3114,
+    "lng": 18.0703,
+    "google_maps_url": "https://maps.google.com/?q=Lion%20Bar%20Hornsgatan%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m40",
+    "name": "Hirschenkeller Sveavägen",
+    "address": "Sveavägen 62, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3304,
+    "lng": 18.0679,
+    "google_maps_url": "https://maps.google.com/?q=Hirschenkeller%20Sveav%C3%A4gen%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m41",
+    "name": "Hirschenkeller Regeringsgatan",
+    "address": "Regeringsgatan 95, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3368,
+    "lng": 18.0612,
+    "google_maps_url": "https://maps.google.com/?q=Hirschenkeller%20Regeringsgatan%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m42",
+    "name": "Hirschenkeller Sankt Eriksgatan",
+    "address": "Sankt Eriksgatan 102, Vasastan",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3385,
+    "lng": 18.0514,
+    "google_maps_url": "https://maps.google.com/?q=Hirschenkeller%20Sankt%20Eriksgatan%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m43",
+    "name": "Dovas (Dunder)",
+    "address": "Hornsgatan 94, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3178,
+    "lng": 18.0736,
+    "google_maps_url": "https://maps.google.com/?q=Dovas%20(Dunder)%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m44",
+    "name": "Kelly's Bar",
+    "address": "Folkungagatan 49, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3128,
+    "lng": 18.0742,
+    "google_maps_url": "https://maps.google.com/?q=Kelly's%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m45",
+    "name": "Baras Backe",
+    "address": "Götgatan 33, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3173,
+    "lng": 18.071,
+    "google_maps_url": "https://maps.google.com/?q=Baras%20Backe%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m46",
+    "name": "Baras Ställe",
+    "address": "Folkungagatan 128, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3187,
+    "lng": 18.0749,
+    "google_maps_url": "https://maps.google.com/?q=Baras%20St%C3%A4lle%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m47",
+    "name": "Baras Imperium",
+    "address": "Götgatan 87, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3103,
+    "lng": 18.0701,
+    "google_maps_url": "https://maps.google.com/?q=Baras%20Imperium%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m48",
+    "name": "Gröne Jägaren",
+    "address": "Götgatan 64, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3109,
+    "lng": 18.0664,
+    "google_maps_url": "https://maps.google.com/?q=Gr%C3%B6ne%20J%C3%A4garen%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m49",
+    "name": "Retro Bar & Restaurang Sveavägen",
+    "address": "Sveavägen 120, Norrmalm",
+    "rating": 4,
+    "price_level": 1,
+    "lat": 59.3282,
+    "lng": 18.0676,
+    "google_maps_url": "https://maps.google.com/?q=Retro%20Bar%20%26%20Restaurang%20Sveav%C3%A4gen%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m50",
+    "name": "Retro Bar & Restaurang SoFo",
+    "address": "Bondegatan 13, Södermalm",
+    "rating": 4,
+    "price_level": 1,
+    "lat": 59.3126,
+    "lng": 18.0704,
+    "google_maps_url": "https://maps.google.com/?q=Retro%20Bar%20%26%20Restaurang%20SoFo%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m51",
+    "name": "Retro Bar & Restaurang Kungsholmen",
+    "address": "Sankt Eriksgatan 22, Kungsholmen",
+    "rating": 4,
+    "price_level": 1,
+    "lat": 59.3272,
+    "lng": 18.0342,
+    "google_maps_url": "https://maps.google.com/?q=Retro%20Bar%20%26%20Restaurang%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m52",
+    "name": "Snotty Flower Bar",
+    "address": "Skånegatan 90, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3111,
+    "lng": 18.0715,
+    "google_maps_url": "https://maps.google.com/?q=Snotty%20Flower%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m53",
+    "name": "Bara Bistro Bar",
+    "address": "Östgötagatan 33, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3112,
+    "lng": 18.0652,
+    "google_maps_url": "https://maps.google.com/?q=Bara%20Bistro%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m54",
+    "name": "Svea Bar & Matsal",
+    "address": "Sveavägen 104, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3308,
+    "lng": 18.0604,
+    "google_maps_url": "https://maps.google.com/?q=Svea%20Bar%20%26%20Matsal%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m55",
+    "name": "Big Ben Pub",
+    "address": "Folkungagatan 97, Södermalm",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3146,
+    "lng": 18.0657,
+    "google_maps_url": "https://maps.google.com/?q=Big%20Ben%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m56",
+    "name": "Ankaret",
+    "address": "Tegnérgatan 17, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3276,
+    "lng": 18.0675,
+    "google_maps_url": "https://maps.google.com/?q=Ankaret%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m57",
+    "name": "Tre Remmare",
+    "address": "Regeringsgatan 47, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3294,
+    "lng": 18.0603,
+    "google_maps_url": "https://maps.google.com/?q=Tre%20Remmare%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m58",
+    "name": "Limerick Pub",
+    "address": "Tegnérgatan 10, Östermalm",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3341,
+    "lng": 18.0773,
+    "google_maps_url": "https://maps.google.com/?q=Limerick%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m59",
+    "name": "Tudor Arms",
+    "address": "Grevgatan 31, Östermalm",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3403,
+    "lng": 18.0794,
+    "google_maps_url": "https://maps.google.com/?q=Tudor%20Arms%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m60",
+    "name": "O'Connors",
+    "address": "Stortorget 20, Gamla Stan",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3194,
+    "lng": 18.0675,
+    "google_maps_url": "https://maps.google.com/?q=O'Connors%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m61",
+    "name": "Half Way Inn",
+    "address": "Swedenborgsgatan 35, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3189,
+    "lng": 18.0687,
+    "google_maps_url": "https://maps.google.com/?q=Half%20Way%20Inn%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m62",
+    "name": "Gullmars Bar & Kök",
+    "address": "Gullmarsplan 4",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.297,
+    "lng": 18.0817,
+    "google_maps_url": "https://maps.google.com/?q=Gullmars%20Bar%20%26%20K%C3%B6k%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m63",
+    "name": "Globen Sportbar (Deli)",
+    "address": "Arenavägen 57, Globen",
+    "rating": 4,
+    "price_level": 1,
+    "lat": 59.2881,
+    "lng": 18.0792,
+    "google_maps_url": "https://maps.google.com/?q=Globen%20Sportbar%20(Deli)%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m64",
+    "name": "En Arena",
+    "address": "Palmfeltsvägen 1, Globen",
+    "rating": 4,
+    "price_level": 1,
+    "lat": 59.2912,
+    "lng": 18.0834,
+    "google_maps_url": "https://maps.google.com/?q=En%20Arena%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m65",
+    "name": "Newis Bar & Kök",
+    "address": "Johanneshovsvägen 19, Gullmarsplan",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3029,
+    "lng": 18.0762,
+    "google_maps_url": "https://maps.google.com/?q=Newis%20Bar%20%26%20K%C3%B6k%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m66",
+    "name": "Sankt Eriks Bar & Kök",
+    "address": "Sankt Eriksgatan 35, Kungsholmen",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3368,
+    "lng": 18.0417,
+    "google_maps_url": "https://maps.google.com/?q=Sankt%20Eriks%20Bar%20%26%20K%C3%B6k%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m67",
+    "name": "Dovas (Sankt Eriksgatan)",
+    "address": "Sankt Eriksgatan 96, Vasastan",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3372,
+    "lng": 18.0512,
+    "google_maps_url": "https://maps.google.com/?q=Dovas%20(Sankt%20Eriksgatan)%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m68",
+    "name": "Bara En Pub",
+    "address": "Skånegatan 81, Södermalm",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3126,
+    "lng": 18.0717,
+    "google_maps_url": "https://maps.google.com/?q=Bara%20En%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m69",
+    "name": "Lilla Wien",
+    "address": "Swedenborgsgatan 20, Södermalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3181,
+    "lng": 18.0748,
+    "google_maps_url": "https://maps.google.com/?q=Lilla%20Wien%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m70",
+    "name": "Ölstugan Tullen Lejonet",
+    "address": "Götgatan 89, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3151,
+    "lng": 18.0707,
+    "google_maps_url": "https://maps.google.com/?q=%C3%96lstugan%20Tullen%20Lejonet%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m71",
+    "name": "Bara 28",
+    "address": "Regeringsgatan 28, Norrmalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3298,
+    "lng": 18.0691,
+    "google_maps_url": "https://maps.google.com/?q=Bara%2028%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m72",
+    "name": "Southside Pub",
+    "address": "Hornsgatan 104, Södermalm",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3153,
+    "lng": 18.0657,
+    "google_maps_url": "https://maps.google.com/?q=Southside%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m73",
+    "name": "BrewDog Bar Södermalm",
+    "address": "Ringvägen 1498, Södermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3094,
+    "lng": 18.0688,
+    "google_maps_url": "https://maps.google.com/?q=BrewDog%20Bar%20S%C3%B6dermalm%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m74",
+    "name": "BrewDog Bar Kungsholmen",
+    "address": "Sankt Eriksgatan 56, Kungsholmen",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.328,
+    "lng": 18.0343,
+    "google_maps_url": "https://maps.google.com/?q=BrewDog%20Bar%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m75",
+    "name": "Lådan",
+    "address": "Luntmakargatan 63, Norrmalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3322,
+    "lng": 18.0619,
+    "google_maps_url": "https://maps.google.com/?q=L%C3%A5dan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m76",
+    "name": "Soldaten Svejk",
+    "address": "Östgötagatan 35, Södermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3151,
+    "lng": 18.0707,
+    "google_maps_url": "https://maps.google.com/?q=Soldaten%20Svejk%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m77",
+    "name": "Tennstopet",
+    "address": "Dalagatan 50, Vasastan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3424,
+    "lng": 18.0481,
+    "google_maps_url": "https://maps.google.com/?q=Tennstopet%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m78",
+    "name": "Pelikan",
+    "address": "Blekingegatan 40, Södermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3156,
+    "lng": 18.067,
+    "google_maps_url": "https://maps.google.com/?q=Pelikan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m79",
+    "name": "Harvest Home",
+    "address": "Bondegan 50, Södermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.316,
+    "lng": 18.0708,
+    "google_maps_url": "https://maps.google.com/?q=Harvest%20Home%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m80",
+    "name": "ManInTheMoon",
+    "address": "Tegnérgatan 2C, Vasastan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3415,
+    "lng": 18.0455,
+    "google_maps_url": "https://maps.google.com/?q=ManInTheMoon%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m81",
+    "name": "The Dubliner",
+    "address": "Smålandsgatan 8, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3314,
+    "lng": 18.0655,
+    "google_maps_url": "https://maps.google.com/?q=The%20Dubliner%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m82",
+    "name": "O'Learys Norrtull",
+    "address": "Sveavägen 143, Vasastan",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3444,
+    "lng": 18.0509,
+    "google_maps_url": "https://maps.google.com/?q=O'Learys%20Norrtull%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m83",
+    "name": "O'Learys Tolv Stockholm",
+    "address": "Arenavägen 75, Globen",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.2911,
+    "lng": 18.0808,
+    "google_maps_url": "https://maps.google.com/?q=O'Learys%20Tolv%20Stockholm%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m84",
+    "name": "O'Learys Gamla Stan",
+    "address": "Skeppsbron 34, Gamla Stan",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3284,
+    "lng": 18.0736,
+    "google_maps_url": "https://maps.google.com/?q=O'Learys%20Gamla%20Stan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m85",
+    "name": "Pressklubben",
+    "address": "Vasagatan 50, Norrmalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3292,
+    "lng": 18.0615,
+    "google_maps_url": "https://maps.google.com/?q=Pressklubben%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m86",
+    "name": "The Flying Dog",
+    "address": "Vasagatan 52, Norrmalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.332,
+    "lng": 18.0668,
+    "google_maps_url": "https://maps.google.com/?q=The%20Flying%20Dog%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m87",
+    "name": "Mikkeller Bar Stockholm",
+    "address": "Döbelnsgatan 25, Vasastan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3463,
+    "lng": 18.0549,
+    "google_maps_url": "https://maps.google.com/?q=Mikkeller%20Bar%20Stockholm%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m88",
+    "name": "Stigbergets Fot",
+    "address": "Götgatan 5, Södermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.317,
+    "lng": 18.0685,
+    "google_maps_url": "https://maps.google.com/?q=Stigbergets%20Fot%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m89",
+    "name": "Katarina Ölkafé",
+    "address": "Katarina Bangata 27, Södermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3136,
+    "lng": 18.0705,
+    "google_maps_url": "https://maps.google.com/?q=Katarina%20%C3%96lkaf%C3%A9%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m90",
+    "name": "L收bar (Loch Ness)",
+    "address": "Tavastgatan 15, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3117,
+    "lng": 18.0703,
+    "google_maps_url": "https://maps.google.com/?q=L%E6%94%B6bar%20(Loch%20Ness)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m91",
+    "name": "The Border Kungsholmen",
+    "address": "Sankt Eriksgatan 41, Kungsholmen",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3278,
+    "lng": 18.0393,
+    "google_maps_url": "https://maps.google.com/?q=The%20Border%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m92",
+    "name": "Orangeriet",
+    "address": "Norr Mälarstrand 46, Kungsholmen",
+    "rating": 4.5,
+    "price_level": 2,
+    "lat": 59.3342,
+    "lng": 18.0376,
+    "google_maps_url": "https://maps.google.com/?q=Orangeriet%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m93",
+    "name": "Local Izakaya",
+    "address": "Sankt Eriksgatan 15, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3285,
+    "lng": 18.0406,
+    "google_maps_url": "https://maps.google.com/?q=Local%20Izakaya%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m94",
+    "name": "Wasa Hof",
+    "address": "Vasagatan 1, Vasastan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3445,
+    "lng": 18.0496,
+    "google_maps_url": "https://maps.google.com/?q=Wasa%20Hof%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m95",
+    "name": "Bistro Bananas",
+    "address": "Skånegatan 47, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3125,
+    "lng": 18.0704,
+    "google_maps_url": "https://maps.google.com/?q=Bistro%20Bananas%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m96",
+    "name": "Babylon",
+    "address": "Björns Trädgårdsgränd 4, Södermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3147,
+    "lng": 18.0744,
+    "google_maps_url": "https://maps.google.com/?q=Babylon%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m97",
+    "name": "Indigo",
+    "address": "Götgatan 19, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3144,
+    "lng": 18.0731,
+    "google_maps_url": "https://maps.google.com/?q=Indigo%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m98",
+    "name": "Morfar Ginko",
+    "address": "Swedenborgsgatan 13, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3143,
+    "lng": 18.0719,
+    "google_maps_url": "https://maps.google.com/?q=Morfar%20Ginko%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m99",
+    "name": "Hemma Hos Kaj",
+    "address": "Hammarby Kajgata 16, Gullmarsplan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3026,
+    "lng": 18.0774,
+    "google_maps_url": "https://maps.google.com/?q=Hemma%20Hos%20Kaj%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m100",
+    "name": "Nya Carnegiebryggeriet",
+    "address": "Ljusslingan 15, Gullmarsplan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.2946,
+    "lng": 18.0814,
+    "google_maps_url": "https://maps.google.com/?q=Nya%20Carnegiebryggeriet%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m101",
+    "name": "Freddas Bar",
+    "address": "Palmfeltsvägen 5, Globen",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.2882,
+    "lng": 18.078,
+    "google_maps_url": "https://maps.google.com/?q=Freddas%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m102",
+    "name": "Gyllene Freden (Baren)",
+    "address": "Österlånggatan 51, Gamla Stan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3257,
+    "lng": 18.0745,
+    "google_maps_url": "https://maps.google.com/?q=Gyllene%20Freden%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m103",
+    "name": "Zum Franziskaner",
+    "address": "Skeppsbron 44, Gamla Stan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3286,
+    "lng": 18.0687,
+    "google_maps_url": "https://maps.google.com/?q=Zum%20Franziskaner%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m104",
+    "name": "Monks Porter House",
+    "address": "Munkbron 11, Gamla Stan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3228,
+    "lng": 18.0654,
+    "google_maps_url": "https://maps.google.com/?q=Monks%20Porter%20House%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m105",
+    "name": "Kryp In",
+    "address": "Prästgatan 17, Gamla Stan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3201,
+    "lng": 18.0738,
+    "google_maps_url": "https://maps.google.com/?q=Kryp%20In%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m106",
+    "name": "The Auld Dub",
+    "address": "Holländargatan 1, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3322,
+    "lng": 18.0681,
+    "google_maps_url": "https://maps.google.com/?q=The%20Auld%20Dub%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m107",
+    "name": "Boqueria (Torget)",
+    "address": "Jakobsbergsgatan 17, Norrmalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3318,
+    "lng": 18.0618,
+    "google_maps_url": "https://maps.google.com/?q=Boqueria%20(Torget)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m108",
+    "name": "Urban Deli Sveavägen Baren",
+    "address": "Sveavägen 44, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3289,
+    "lng": 18.0677,
+    "google_maps_url": "https://maps.google.com/?q=Urban%20Deli%20Sveav%C3%A4gen%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m109",
+    "name": "Calle P",
+    "address": "Berzelii Park, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3307,
+    "lng": 18.0617,
+    "google_maps_url": "https://maps.google.com/?q=Calle%20P%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m110",
+    "name": "Tak (Råbaren)",
+    "address": "Brunkebergstorg 4, Norrmalm",
+    "rating": 4.3,
+    "price_level": 2,
+    "lat": 59.3332,
+    "lng": 18.0632,
+    "google_maps_url": "https://maps.google.com/?q=Tak%20(R%C3%A5baren)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m111",
+    "name": "Hobo Bar",
+    "address": "Brunkebergstorg 4, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3359,
+    "lng": 18.0611,
+    "google_maps_url": "https://maps.google.com/?q=Hobo%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m112",
+    "name": "Pickwick Pub",
+    "address": "Droorninggatan 11, Gamla Stan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3198,
+    "lng": 18.0651,
+    "google_maps_url": "https://maps.google.com/?q=Pickwick%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m113",
+    "name": "The Queen's Head",
+    "address": "Drottninggatan 108, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3311,
+    "lng": 18.0655,
+    "google_maps_url": "https://maps.google.com/?q=The%20Queen's%20Head%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m114",
+    "name": "Churchill Arms",
+    "address": "Tegnérgatan 5, Vasastan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3415,
+    "lng": 18.048,
+    "google_maps_url": "https://maps.google.com/?q=Churchill%20Arms%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m115",
+    "name": "Roq",
+    "address": "Gyllenstiernsgatan 17, Vasastan",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3426,
+    "lng": 18.0544,
+    "google_maps_url": "https://maps.google.com/?q=Roq%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m116",
+    "name": "The Bishops Arms Vasagatan",
+    "address": "Vasagatan 7, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3288,
+    "lng": 18.0639,
+    "google_maps_url": "https://maps.google.com/?q=The%20Bishops%20Arms%20Vasagatan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m117",
+    "name": "The Bishops Arms Sankt Eriksgatan",
+    "address": "Sankt Eriksgatan 115, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3276,
+    "lng": 18.0343,
+    "google_maps_url": "https://maps.google.com/?q=The%20Bishops%20Arms%20Sankt%20Eriksgatan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m118",
+    "name": "The Bishops Arms Bellmansgatan",
+    "address": "Bellmansgatan 12, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3175,
+    "lng": 18.071,
+    "google_maps_url": "https://maps.google.com/?q=The%20Bishops%20Arms%20Bellmansgatan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m119",
+    "name": "The Bishops Arms Östermalm",
+    "address": "Linnégatan 1, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3399,
+    "lng": 18.0781,
+    "google_maps_url": "https://maps.google.com/?q=The%20Bishops%20Arms%20%C3%96stermalm%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m120",
+    "name": "Eriks Bakficka",
+    "address": "Fredrikshovsgatan 4, Östermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3336,
+    "lng": 18.076,
+    "google_maps_url": "https://maps.google.com/?q=Eriks%20Bakficka%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m121",
+    "name": "Kombat Bar",
+    "address": "Sveavägen 39, Norrmalm",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3357,
+    "lng": 18.0635,
+    "google_maps_url": "https://maps.google.com/?q=Kombat%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m122",
+    "name": "Sturehof (Baren)",
+    "address": "Stureplan 2, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3357,
+    "lng": 18.0738,
+    "google_maps_url": "https://maps.google.com/?q=Sturehof%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m123",
+    "name": "Bull & Bear Inn",
+    "address": "Birger Jarlsgatan 16, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3322,
+    "lng": 18.0771,
+    "google_maps_url": "https://maps.google.com/?q=Bull%20%26%20Bear%20Inn%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m124",
+    "name": "Zink Grill Baren",
+    "address": "Biblioteksgatan 5, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3404,
+    "lng": 18.0756,
+    "google_maps_url": "https://maps.google.com/?q=Zink%20Grill%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m125",
+    "name": "Grodan (Baren)",
+    "address": "Grev Turegatan 16, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3344,
+    "lng": 18.0724,
+    "google_maps_url": "https://maps.google.com/?q=Grodan%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m126",
+    "name": "East (Baren)",
+    "address": "Stureplan 13, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.338,
+    "lng": 18.0766,
+    "google_maps_url": "https://maps.google.com/?q=East%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m127",
+    "name": "Aubergine",
+    "address": "Linnégatan 38, Östermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3346,
+    "lng": 18.0774,
+    "google_maps_url": "https://maps.google.com/?q=Aubergine%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m128",
+    "name": "Tranan",
+    "address": "Karlbergsvägen 14, Vasastan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3434,
+    "lng": 18.0483,
+    "google_maps_url": "https://maps.google.com/?q=Tranan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m129",
+    "name": "Wasahof",
+    "address": "Norrtullsgatan 1, Vasastan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3371,
+    "lng": 18.0525,
+    "google_maps_url": "https://maps.google.com/?q=Wasahof%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m130",
+    "name": "Lilla Ego (Baren)",
+    "address": "Västmannagatan 69, Vasastan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3416,
+    "lng": 18.053,
+    "google_maps_url": "https://maps.google.com/?q=Lilla%20Ego%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m131",
+    "name": "Blique by Nobis Baren",
+    "address": "Gävlegatan 18, Vasastan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3382,
+    "lng": 18.0526,
+    "google_maps_url": "https://maps.google.com/?q=Blique%20by%20Nobis%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m132",
+    "name": "Low & Slow Smokehouse",
+    "address": "Luntmakargatan 98, Vasastan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3376,
+    "lng": 18.05,
+    "google_maps_url": "https://maps.google.com/?q=Low%20%26%20Slow%20Smokehouse%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m133",
+    "name": "Lilla Barkarby (STHLM branch)",
+    "address": "Kungsgatan 24, Norrmalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3345,
+    "lng": 18.0609,
+    "google_maps_url": "https://maps.google.com/?q=Lilla%20Barkarby%20(STHLM%20branch)%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m134",
+    "name": "Belgobaren",
+    "address": "Bryggargatan 12, Norrmalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3321,
+    "lng": 18.0681,
+    "google_maps_url": "https://maps.google.com/?q=Belgobaren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m135",
+    "name": "Bierhaus",
+    "address": "Tegnérgatan 10, Vasastan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3449,
+    "lng": 18.0547,
+    "google_maps_url": "https://maps.google.com/?q=Bierhaus%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m136",
+    "name": "Syster Marmelad",
+    "address": "Kronobergsgatan 11, Kungsholmen",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3345,
+    "lng": 18.0389,
+    "google_maps_url": "https://maps.google.com/?q=Syster%20Marmelad%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m137",
+    "name": "Styrbord Babord",
+    "address": "Kungsholms Strand 157, Kungsholmen",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3291,
+    "lng": 18.0382,
+    "google_maps_url": "https://maps.google.com/?q=Styrbord%20Babord%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m138",
+    "name": "Il Conte Baren",
+    "address": "Grevgatan 9, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3344,
+    "lng": 18.0761,
+    "google_maps_url": "https://maps.google.com/?q=Il%20Conte%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m139",
+    "name": "Nybrogatan 38",
+    "address": "Nybrogatan 38, Östermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3404,
+    "lng": 18.0794,
+    "google_maps_url": "https://maps.google.com/?q=Nybrogatan%2038%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m140",
+    "name": "Paraden Kvarterskrog",
+    "address": "Valhallavägen 147, Östermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3346,
+    "lng": 18.0812,
+    "google_maps_url": "https://maps.google.com/?q=Paraden%20Kvarterskrog%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m141",
+    "name": "Karlsson & Co",
+    "address": "Birger Jarlsgatan 37, Östermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3381,
+    "lng": 18.0778,
+    "google_maps_url": "https://maps.google.com/?q=Karlsson%20%26%20Co%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m142",
+    "name": "The Flying Horse",
+    "address": "Odengatan 44, Vasastan",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3411,
+    "lng": 18.0542,
+    "google_maps_url": "https://maps.google.com/?q=The%20Flying%20Horse%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m143",
+    "name": "Hard Rock Cafe Stockholm",
+    "address": "Sveavägen 75, Vasastan",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3459,
+    "lng": 18.0486,
+    "google_maps_url": "https://maps.google.com/?q=Hard%20Rock%20Cafe%20Stockholm%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m144",
+    "name": "Pitcher's Mariatorget",
+    "address": "Mariatorget 1A, Södermalm",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.3164,
+    "lng": 18.0671,
+    "google_maps_url": "https://maps.google.com/?q=Pitcher's%20Mariatorget%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m145",
+    "name": "Grace's Pub",
+    "address": "Österlånggatan 4, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3329,
+    "lng": 18.0619,
+    "google_maps_url": "https://maps.google.com/?q=Grace's%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m146",
+    "name": "Knut Bar",
+    "address": "Regeringsgatan 77, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3357,
+    "lng": 18.0673,
+    "google_maps_url": "https://maps.google.com/?q=Knut%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m147",
+    "name": "Phils Burger Bar Kungsholmen",
+    "address": "Fleminggatan 49, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3317,
+    "lng": 18.0335,
+    "google_maps_url": "https://maps.google.com/?q=Phils%20Burger%20Bar%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m148",
+    "name": "Tjoget",
+    "address": "Hornsgatan 178, Södermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3145,
+    "lng": 18.0694,
+    "google_maps_url": "https://maps.google.com/?q=Tjoget%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m149",
+    "name": "Lucy's Flower Shop",
+    "address": "Birger Jarlsgatan 20, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3312,
+    "lng": 18.0692,
+    "google_maps_url": "https://maps.google.com/?q=Lucy's%20Flower%20Shop%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m150",
+    "name": "Röda Huset",
+    "address": "Brunkebergstorg 2, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3352,
+    "lng": 18.0685,
+    "google_maps_url": "https://maps.google.com/?q=R%C3%B6da%20Huset%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m151",
+    "name": "Tak Roof Bar",
+    "address": "Brunkebergstorg 4, Norrmalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3321,
+    "lng": 18.0618,
+    "google_maps_url": "https://maps.google.com/?q=Tak%20Roof%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m152",
+    "name": "Gondolen Baren",
+    "address": "Stadsgården 6, Södermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.309,
+    "lng": 18.065,
+    "google_maps_url": "https://maps.google.com/?q=Gondolen%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m153",
+    "name": "Freyja + Söder",
+    "address": "Hornsgatan 18, Södermalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3138,
+    "lng": 18.0656,
+    "google_maps_url": "https://maps.google.com/?q=Freyja%20%2B%20S%C3%B6der%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m154",
+    "name": "Himlen Baren",
+    "address": "Götgatan 78, Södermalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3093,
+    "lng": 18.0725,
+    "google_maps_url": "https://maps.google.com/?q=Himlen%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m155",
+    "name": "Coquetel Social",
+    "address": "Birger Jarlsgatan 20, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3401,
+    "lng": 18.0768,
+    "google_maps_url": "https://maps.google.com/?q=Coquetel%20Social%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m156",
+    "name": "A Bar Called Gemma",
+    "address": "Grev Turegatan 30, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3298,
+    "lng": 18.0678,
+    "google_maps_url": "https://maps.google.com/?q=A%20Bar%20Called%20Gemma%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m157",
+    "name": "Asian Post Office (APO)",
+    "address": "Regeringsgatan 66, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3361,
+    "lng": 18.0673,
+    "google_maps_url": "https://maps.google.com/?q=Asian%20Post%20Office%20(APO)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m158",
+    "name": "Superswede Baren",
+    "address": "Vasagatan 16, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3289,
+    "lng": 18.0652,
+    "google_maps_url": "https://maps.google.com/?q=Superswede%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m159",
+    "name": "L'Avventura (Baren)",
+    "address": "Sveavägen 77, Vasastan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3438,
+    "lng": 18.0483,
+    "google_maps_url": "https://maps.google.com/?q=L'Avventura%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m160",
+    "name": "Riche (Baren)",
+    "address": "Birger Jarlsgatan 4, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.334,
+    "lng": 18.0736,
+    "google_maps_url": "https://maps.google.com/?q=Riche%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m161",
+    "name": "Teaterbaren",
+    "address": "Nybrogatan 28, Norrmalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3285,
+    "lng": 18.0689,
+    "google_maps_url": "https://maps.google.com/?q=Teaterbaren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m162",
+    "name": "Ambar Vinbar",
+    "address": "Tomtebogatan 22, Vasastan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3425,
+    "lng": 18.0531,
+    "google_maps_url": "https://maps.google.com/?q=Ambar%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m163",
+    "name": "Gaston Vinbar",
+    "address": "Mälartorget 15, Gamla Stan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.326,
+    "lng": 18.0746,
+    "google_maps_url": "https://maps.google.com/?q=Gaston%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m164",
+    "name": "Tyge & Sessil",
+    "address": "Brahegatan 4, Östermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3378,
+    "lng": 18.0753,
+    "google_maps_url": "https://maps.google.com/?q=Tyge%20%26%20Sessil%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m165",
+    "name": "Grus Grus Vinbar",
+    "address": "Karlbergsvägen 14, Vasastan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3422,
+    "lng": 18.0519,
+    "google_maps_url": "https://maps.google.com/?q=Grus%20Grus%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m166",
+    "name": "Savvant Vinbar",
+    "address": "Tegnergatan 4, Östermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3337,
+    "lng": 18.0735,
+    "google_maps_url": "https://maps.google.com/?q=Savvant%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m167",
+    "name": "Gemla Vinbar",
+    "address": "Hammarby Allé 66, Gullmarsplan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.2982,
+    "lng": 18.0756,
+    "google_maps_url": "https://maps.google.com/?q=Gemla%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m168",
+    "name": "Kagges Vinbar",
+    "address": "Lilla Nygatan 21, Gamla Stan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3214,
+    "lng": 18.074,
+    "google_maps_url": "https://maps.google.com/?q=Kagges%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m169",
+    "name": "Enoteca Maglia",
+    "address": "Hammarby Allé 93, Gullmarsplan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.2978,
+    "lng": 18.0793,
+    "google_maps_url": "https://maps.google.com/?q=Enoteca%20Maglia%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m170",
+    "name": "Nya Allmänna Gränd Baren",
+    "address": "Allmänna Gränd 3, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3328,
+    "lng": 18.0772,
+    "google_maps_url": "https://maps.google.com/?q=Nya%20Allm%C3%A4nna%20Gr%C3%A4nd%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m171",
+    "name": "Bar Hommage",
+    "address": "Krukmakargatan 22, Södermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3123,
+    "lng": 18.0716,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20Hommage%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m172",
+    "name": "Cadillac Bar",
+    "address": "Berzelii Park, Norrmalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3334,
+    "lng": 18.0683,
+    "google_maps_url": "https://maps.google.com/?q=Cadillac%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m173",
+    "name": "Bar open",
+    "address": "Skånegatan 59, Södermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3171,
+    "lng": 18.0735,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20open%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m174",
+    "name": "Folii",
+    "address": "Erstagatan 21, Södermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3109,
+    "lng": 18.0702,
+    "google_maps_url": "https://maps.google.com/?q=Folii%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m175",
+    "name": "Dryck Vinbar",
+    "address": "Swedenborgsgatan 1, Södermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3097,
+    "lng": 18.0713,
+    "google_maps_url": "https://maps.google.com/?q=Dryck%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m176",
+    "name": "Corvina Enoteca",
+    "address": "Kornhamnstorg 49, Gamla Stan",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3215,
+    "lng": 18.0678,
+    "google_maps_url": "https://maps.google.com/?q=Corvina%20Enoteca%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m177",
+    "name": "Vina",
+    "address": "Sofiagatan 1, Södermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3128,
+    "lng": 18.0654,
+    "google_maps_url": "https://maps.google.com/?q=Vina%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m178",
+    "name": "Barobao",
+    "address": "Hornsgatan 66, Södermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.313,
+    "lng": 18.0692,
+    "google_maps_url": "https://maps.google.com/?q=Barobao%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m179",
+    "name": "Nizza (Baren)",
+    "address": "Åsögatan 171, Södermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3157,
+    "lng": 18.0733,
+    "google_maps_url": "https://maps.google.com/?q=Nizza%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m180",
+    "name": "Spesso Rooftop Bar",
+    "address": "Malmskillnadsgatan 38, Norrmalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3317,
+    "lng": 18.0643,
+    "google_maps_url": "https://maps.google.com/?q=Spesso%20Rooftop%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m181",
+    "name": "Arc Rooftop Baren",
+    "address": "Gävlegatan 18, Vasastan",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3469,
+    "lng": 18.0499,
+    "google_maps_url": "https://maps.google.com/?q=Arc%20Rooftop%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m182",
+    "name": "Capital Rooftop Bar",
+    "address": "Vasagatan 22, Norrmalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3334,
+    "lng": 18.0695,
+    "google_maps_url": "https://maps.google.com/?q=Capital%20Rooftop%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m183",
+    "name": "Le Nôtre Cocktail Lounge",
+    "address": "Strandvägen 7C, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.335,
+    "lng": 18.075,
+    "google_maps_url": "https://maps.google.com/?q=Le%20N%C3%B4tre%20Cocktail%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m184",
+    "name": "Hallwylska Museets Gård",
+    "address": "Hamngatan 4, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3336,
+    "lng": 18.0645,
+    "google_maps_url": "https://maps.google.com/?q=Hallwylska%20Museets%20G%C3%A5rd%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m185",
+    "name": "Sjöfartshotellets Takbar",
+    "address": "Katarinavägen 26, Södermalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3118,
+    "lng": 18.0666,
+    "google_maps_url": "https://maps.google.com/?q=Sj%C3%B6fartshotellets%20Takbar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m186",
+    "name": "The Woodyard Lounge",
+    "address": "Norr Mälarstrand 64, Kungsholmen",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3358,
+    "lng": 18.0353,
+    "google_maps_url": "https://maps.google.com/?q=The%20Woodyard%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m187",
+    "name": "Pontus! i Franthallen (Baren)",
+    "address": "Arenavägen 63, Globen",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.2891,
+    "lng": 18.0868,
+    "google_maps_url": "https://maps.google.com/?q=Pontus!%20i%20Franthallen%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m188",
+    "name": "Bar Portal",
+    "address": "Sankt Eriksplan 1, Vasastan",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3413,
+    "lng": 18.0542,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20Portal%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m189",
+    "name": "Stallmästaregården (Baren)",
+    "address": "Stallmästaregården 1, Vasastan",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.346,
+    "lng": 18.0511,
+    "google_maps_url": "https://maps.google.com/?q=Stallm%C3%A4stareg%C3%A5rden%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m190",
+    "name": "Lilla Parkkaféet Lounge",
+    "address": "Djurgårdsslätten 49, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3334,
+    "lng": 18.081,
+    "google_maps_url": "https://maps.google.com/?q=Lilla%20Parkkaf%C3%A9et%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m191",
+    "name": "Villa Godthem (Verandan)",
+    "address": "Rosendalsvägen 9, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3316,
+    "lng": 18.072,
+    "google_maps_url": "https://maps.google.com/?q=Villa%20Godthem%20(Verandan)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m192",
+    "name": "Ulla Winbladh (Baren)",
+    "address": "Rosendalsvägen 8, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3358,
+    "lng": 18.0801,
+    "google_maps_url": "https://maps.google.com/?q=Ulla%20Winbladh%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m193",
+    "name": "Gallow Green Stockholm",
+    "address": "Dalagatan 4, Vasastan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3373,
+    "lng": 18.045,
+    "google_maps_url": "https://maps.google.com/?q=Gallow%20Green%20Stockholm%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m194",
+    "name": "Bar Imbibe",
+    "address": "Krukmakargatan 26, Södermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3135,
+    "lng": 18.073,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20Imbibe%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m195",
+    "name": "The Soda Pop",
+    "address": "Mäster Samuelsgatan 10, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3279,
+    "lng": 18.0651,
+    "google_maps_url": "https://maps.google.com/?q=The%20Soda%20Pop%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m196",
+    "name": "Hantverket (Baren)",
+    "address": "Sturegatan 15, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3319,
+    "lng": 18.0758,
+    "google_maps_url": "https://maps.google.com/?q=Hantverket%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m197",
+    "name": "Un Poco (Baren)",
+    "address": "Karlavägen 28, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3397,
+    "lng": 18.078,
+    "google_maps_url": "https://maps.google.com/?q=Un%20Poco%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m198",
+    "name": "Etoile Lounge",
+    "address": "Norrtullsgatan 21, Vasastan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3398,
+    "lng": 18.0541,
+    "google_maps_url": "https://maps.google.com/?q=Etoile%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m199",
+    "name": "Agrikultur Bar",
+    "address": "Roslagsgatan 43, Vasastan",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3421,
+    "lng": 18.0493,
+    "google_maps_url": "https://maps.google.com/?q=Agrikultur%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m200",
+    "name": "Sensum Bar",
+    "address": "Wallingatan 40, Vasastan",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3376,
+    "lng": 18.0525,
+    "google_maps_url": "https://maps.google.com/?q=Sensum%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m201",
+    "name": "Mextik Bar",
+    "address": "Kungsgatan 33, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3287,
+    "lng": 18.0677,
+    "google_maps_url": "https://maps.google.com/?q=Mextik%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m202",
+    "name": "Supermancini Lounge",
+    "address": "Klara Norra Kyrkogata 23, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3292,
+    "lng": 18.0652,
+    "google_maps_url": "https://maps.google.com/?q=Supermancini%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m203",
+    "name": "Bar Doce",
+    "address": "Malmskillnadsgatan 42, Norrmalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3296,
+    "lng": 18.064,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20Doce%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m204",
+    "name": "Surfers Bar",
+    "address": "Regeringsgatan 88, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3295,
+    "lng": 18.0615,
+    "google_maps_url": "https://maps.google.com/?q=Surfers%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m205",
+    "name": "Ling Long Baren",
+    "address": "Riddargatan 6, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3376,
+    "lng": 18.0728,
+    "google_maps_url": "https://maps.google.com/?q=Ling%20Long%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m206",
+    "name": "Meno Malat Lounge",
+    "address": "Hantverkargatan 34, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3364,
+    "lng": 18.0379,
+    "google_maps_url": "https://maps.google.com/?q=Meno%20Malat%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m207",
+    "name": "Cadierbaren",
+    "address": "Södra Blasieholmshamnen 8, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3298,
+    "lng": 18.0678,
+    "google_maps_url": "https://maps.google.com/?q=Cadierbaren%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m208",
+    "name": "Gold Bar",
+    "address": "Norrmalmstorg 2",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3321,
+    "lng": 18.0606,
+    "google_maps_url": "https://maps.google.com/?q=Gold%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m209",
+    "name": "Operabaren",
+    "address": "Karl XII:s torg, Norrmalm",
+    "rating": 4.1,
+    "price_level": 3,
+    "lat": 59.3271,
+    "lng": 18.0625,
+    "google_maps_url": "https://maps.google.com/?q=Operabaren%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m210",
+    "name": "Berns Le Bar",
+    "address": "Näckströmsgatan 8, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3286,
+    "lng": 18.0627,
+    "google_maps_url": "https://maps.google.com/?q=Berns%20Le%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m211",
+    "name": "Bank Hotel Cocktail Lounge",
+    "address": "Arsenalsgatan 6, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3308,
+    "lng": 18.0604,
+    "google_maps_url": "https://maps.google.com/?q=Bank%20Hotel%20Cocktail%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m212",
+    "name": "Le Hibou Rooftop",
+    "address": "Arsenalsgatan 6, Norrmalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3299,
+    "lng": 18.0616,
+    "google_maps_url": "https://maps.google.com/?q=Le%20Hibou%20Rooftop%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m213",
+    "name": "Coq Blanc Classic Lounge",
+    "address": "Regeringsgatan 111, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3339,
+    "lng": 18.0621,
+    "google_maps_url": "https://maps.google.com/?q=Coq%20Blanc%20Classic%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m214",
+    "name": "Grand Hôtel Verandan Bar",
+    "address": "Södra Blasieholmshamnen 8, Norrmalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3317,
+    "lng": 18.068,
+    "google_maps_url": "https://maps.google.com/?q=Grand%20H%C3%B4tel%20Verandan%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m215",
+    "name": "Hotel Diplomat Cocktail Bar",
+    "address": "Strandvägen 7C, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3313,
+    "lng": 18.0732,
+    "google_maps_url": "https://maps.google.com/?q=Hotel%20Diplomat%20Cocktail%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m216",
+    "name": "Ett Hem Lounge",
+    "address": "Sköldungagatan 2, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3369,
+    "lng": 18.0727,
+    "google_maps_url": "https://maps.google.com/?q=Ett%20Hem%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m217",
+    "name": "Villa Dagmar Baren",
+    "address": "Nybrogatan 2527, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3324,
+    "lng": 18.0771,
+    "google_maps_url": "https://maps.google.com/?q=Villa%20Dagmar%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m218",
+    "name": "Aster Bar at Bank",
+    "address": "Arsenalsgatan 6, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3315,
+    "lng": 18.063,
+    "google_maps_url": "https://maps.google.com/?q=Aster%20Bar%20at%20Bank%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m219",
+    "name": "Cavabar at Grand Hôtel",
+    "address": "Södra Blasieholmshamnen 8, Norrmalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.329,
+    "lng": 18.0627,
+    "google_maps_url": "https://maps.google.com/?q=Cavabar%20at%20Grand%20H%C3%B4tel%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m220",
+    "name": "Svenskt Tenn Tesalong Lounge",
+    "address": "Strandvägen 5, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3342,
+    "lng": 18.0724,
+    "google_maps_url": "https://maps.google.com/?q=Svenskt%20Tenn%20Tesalong%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m221",
+    "name": "Noppe Bar (Private/Premium)",
+    "address": "Lästmakargatan 9, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3369,
+    "lng": 18.0752,
+    "google_maps_url": "https://maps.google.com/?q=Noppe%20Bar%20(Private%2FPremium)%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m222",
+    "name": "Sturecompagniet VVIP Bar",
+    "address": "Sturegatan 4, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3326,
+    "lng": 18.0734,
+    "google_maps_url": "https://maps.google.com/?q=Sturecompagniet%20VVIP%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m223",
+    "name": "Spy Bar (Premium Access)",
+    "address": "Birger Jarlsgatan 20, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3345,
+    "lng": 18.0799,
+    "google_maps_url": "https://maps.google.com/?q=Spy%20Bar%20(Premium%20Access)%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m224",
+    "name": "Corner Club (Premium)",
+    "address": "Lilla Nygatan 14, Gamla Stan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3255,
+    "lng": 18.067,
+    "google_maps_url": "https://maps.google.com/?q=Corner%20Club%20(Premium)%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m225",
+    "name": "Collector's Hotel Secret Lounge",
+    "address": "Lilla Nygatan 5, Gamla Stan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3251,
+    "lng": 18.0695,
+    "google_maps_url": "https://maps.google.com/?q=Collector's%20Hotel%20Secret%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m226",
+    "name": "Frantzén Cocktail Experience",
+    "address": "Klara Norra Kyrkogata 26, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3288,
+    "lng": 18.0677,
+    "google_maps_url": "https://maps.google.com/?q=Frantz%C3%A9n%20Cocktail%20Experience%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m227",
+    "name": "Aloë Lounge (Premium)",
+    "address": "Svartlösavägen 52 (Älvsjö/Globen area link)",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.2971,
+    "lng": 18.0866,
+    "google_maps_url": "https://maps.google.com/?q=Alo%C3%AB%20Lounge%20(Premium)%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m228",
+    "name": "Oaxen Slip Champagne Bar",
+    "address": "Beckholmsbron 26, Östermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3354,
+    "lng": 18.0788,
+    "google_maps_url": "https://maps.google.com/?q=Oaxen%20Slip%20Champagne%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m229",
+    "name": "AtSix Cocktail Lounge",
+    "address": "Brunkebergstorg 6, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3271,
+    "lng": 18.0612,
+    "google_maps_url": "https://maps.google.com/?q=AtSix%20Cocktail%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m230",
+    "name": "Blanche & Hierta Vinbar",
+    "address": "Brunkebergstorg 6, Norrmalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.333,
+    "lng": 18.0682,
+    "google_maps_url": "https://maps.google.com/?q=Blanche%20%26%20Hierta%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m231",
+    "name": "Tak Izakaya Premium Bar",
+    "address": "Brunkebergstorg 4, Norrmalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3332,
+    "lng": 18.0682,
+    "google_maps_url": "https://maps.google.com/?q=Tak%20Izakaya%20Premium%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m232",
+    "name": "Teatergrillen",
+    "address": "Nybrogatan 28, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3392,
+    "lng": 18.0742,
+    "google_maps_url": "https://maps.google.com/?q=Teatergrillen%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m233",
+    "name": "Jacqueline's Premium Lounge",
+    "address": "Malmskillnadsgatan 40, Norrmalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3344,
+    "lng": 18.0621,
+    "google_maps_url": "https://maps.google.com/?q=Jacqueline's%20Premium%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m234",
+    "name": "Berns Stora Salongen Bar",
+    "address": "Berzelii Park, Norrmalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3353,
+    "lng": 18.0685,
+    "google_maps_url": "https://maps.google.com/?q=Berns%20Stora%20Salongen%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m235",
+    "name": "Brasserie Makalös Lounge",
+    "address": "Västra Trädgårdsgatan 11B, Norrmalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3285,
+    "lng": 18.0651,
+    "google_maps_url": "https://maps.google.com/?q=Brasserie%20Makal%C3%B6s%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m236",
+    "name": "Animo Baren",
+    "address": "Kungstensgatan 12, Vasastan",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.346,
+    "lng": 18.0498,
+    "google_maps_url": "https://maps.google.com/?q=Animo%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 155,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m237",
+    "name": "Södra Teatern Baren",
+    "address": "Mosebacke Torg 1, Södermalm",
+    "rating": 4.3,
+    "price_level": 3,
+    "lat": 59.3109,
+    "lng": 18.0664,
+    "google_maps_url": "https://maps.google.com/?q=S%C3%B6dra%20Teatern%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "takbar",
+      "utsikt",
+      "sommar",
+      "mingel"
+    ]
+  },
+  {
+    "id": "m238",
+    "name": "Loch Ness Pub",
+    "address": "Tavastgatan 15, Södermalm",
+    "rating": 4.2,
+    "price_level": 1,
+    "lat": 59.3114,
+    "lng": 18.074,
+    "google_maps_url": "https://maps.google.com/?q=Loch%20Ness%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "pub",
+      "irländskt",
+      "livemusik",
+      "öl"
+    ]
+  },
+  {
+    "id": "m239",
+    "name": "Morfar Ginko & Pappa Ray Ray",
+    "address": "Swedenborgsgatan 13, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3171,
+    "lng": 18.071,
+    "google_maps_url": "https://maps.google.com/?q=Morfar%20Ginko%20%26%20Pappa%20Ray%20Ray%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m240",
+    "name": "Linje Tio",
+    "address": "Hornsgatan 178, Södermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3152,
+    "lng": 18.0682,
+    "google_maps_url": "https://maps.google.com/?q=Linje%20Tio%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m241",
+    "name": "Katarina Ölkafé SoFo",
+    "address": "Katarina Bangata 27, Södermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3115,
+    "lng": 18.0665,
+    "google_maps_url": "https://maps.google.com/?q=Katarina%20%C3%96lkaf%C3%A9%20SoFo%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m242",
+    "name": "Krogen Tre Backar",
+    "address": "Tegnérgatan 12, Norrmalm",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3335,
+    "lng": 18.0633,
+    "google_maps_url": "https://maps.google.com/?q=Krogen%20Tre%20Backar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m243",
+    "name": "Bara En Enkel",
+    "address": "Skånegatan 51, Södermalm",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3118,
+    "lng": 18.0653,
+    "google_maps_url": "https://maps.google.com/?q=Bara%20En%20Enkel%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m244",
+    "name": "Lasse i Parken",
+    "address": "Högalidsgatan 56, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.31,
+    "lng": 18.0701,
+    "google_maps_url": "https://maps.google.com/?q=Lasse%20i%20Parken%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m245",
+    "name": "Bleck",
+    "address": "Katarina Bangata 80, Södermalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3141,
+    "lng": 18.0706,
+    "google_maps_url": "https://maps.google.com/?q=Bleck%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m246",
+    "name": "Noël Bar",
+    "address": "Skånegatan 59, Södermalm",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3147,
+    "lng": 18.0744,
+    "google_maps_url": "https://maps.google.com/?q=No%C3%ABl%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m247",
+    "name": "Babajan",
+    "address": "Katarina Bangata 75, Södermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3107,
+    "lng": 18.0677,
+    "google_maps_url": "https://maps.google.com/?q=Babajan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m248",
+    "name": "Lemon Bar",
+    "address": "Scheelegatan 8, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3304,
+    "lng": 18.0346,
+    "google_maps_url": "https://maps.google.com/?q=Lemon%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m249",
+    "name": "Tap Room Kungsholmen",
+    "address": "Kungsholmsgatan 31, Kungsholmen",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3301,
+    "lng": 18.0358,
+    "google_maps_url": "https://maps.google.com/?q=Tap%20Room%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m250",
+    "name": "Wijnjas Grosshandel",
+    "address": "Scheelegatan 3, Kungsholmen",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3298,
+    "lng": 18.0346,
+    "google_maps_url": "https://maps.google.com/?q=Wijnjas%20Grosshandel%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m251",
+    "name": "Amida Bar",
+    "address": "Sankt Eriksgatan 24, Kungsholmen",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3347,
+    "lng": 18.0339,
+    "google_maps_url": "https://maps.google.com/?q=Amida%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m252",
+    "name": "Styrbord & Babord Kungsholmen",
+    "address": "Kungsholms Strand 157, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3318,
+    "lng": 18.0386,
+    "google_maps_url": "https://maps.google.com/?q=Styrbord%20%26%20Babord%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m253",
+    "name": "Nivå22",
+    "address": "Fridhemsgatan 17, Kungsholmen",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3276,
+    "lng": 18.038,
+    "google_maps_url": "https://maps.google.com/?q=Niv%C3%A522%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m254",
+    "name": "Lokal Izakaya Kungsholmen",
+    "address": "Sankt Eriksgatan 15, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3272,
+    "lng": 18.033,
+    "google_maps_url": "https://maps.google.com/?q=Lokal%20Izakaya%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m255",
+    "name": "Dovans Fridhemsplan",
+    "address": "Fridhemsgatan 21, Kungsholmen",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3318,
+    "lng": 18.0411,
+    "google_maps_url": "https://maps.google.com/?q=Dovans%20Fridhemsplan%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m256",
+    "name": "BrewDog Kungsholmen",
+    "address": "Sankt Eriksgatan 56, Kungsholmen",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3297,
+    "lng": 18.0333,
+    "google_maps_url": "https://maps.google.com/?q=BrewDog%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "craft-öl",
+      "öl",
+      "mysigt",
+      "populärt"
+    ]
+  },
+  {
+    "id": "m257",
+    "name": "The Protocol Pub",
+    "address": "Fleminggatan 65, Kungsholmen",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.335,
+    "lng": 18.0377,
+    "google_maps_url": "https://maps.google.com/?q=The%20Protocol%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m258",
+    "name": "Kungsholmens Kvartersbar",
+    "address": "Hantverkargatan 42, Kungsholmen",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.3325,
+    "lng": 18.0336,
+    "google_maps_url": "https://maps.google.com/?q=Kungsholmens%20Kvartersbar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m259",
+    "name": "Piper's Bar",
+    "address": "Pipersgatan 12, Kungsholmen",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3317,
+    "lng": 18.0398,
+    "google_maps_url": "https://maps.google.com/?q=Piper's%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m260",
+    "name": "Proviant Kungsholmen",
+    "address": "Kungsholmsgatan 14, Kungsholmen",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.327,
+    "lng": 18.0355,
+    "google_maps_url": "https://maps.google.com/?q=Proviant%20Kungsholmen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m261",
+    "name": "Mäster Anders",
+    "address": "Pipersgatan 1, Kungsholmen",
+    "rating": 4.1,
+    "price_level": 3,
+    "lat": 59.3352,
+    "lng": 18.0352,
+    "google_maps_url": "https://maps.google.com/?q=M%C3%A4ster%20Anders%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m262",
+    "name": "Slakthuset Baren",
+    "address": "Slakthusgatan 6, Gullmarsplan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.299,
+    "lng": 18.077,
+    "google_maps_url": "https://maps.google.com/?q=Slakthuset%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m263",
+    "name": "Colosseum Sportbar",
+    "address": "Arenavägen 75, Globen",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.2909,
+    "lng": 18.0846,
+    "google_maps_url": "https://maps.google.com/?q=Colosseum%20Sportbar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m264",
+    "name": "Tolv Stockholm Bowling Bar",
+    "address": "Arenavägen 75, Globen",
+    "rating": 4,
+    "price_level": 2,
+    "lat": 59.2966,
+    "lng": 18.079,
+    "google_maps_url": "https://maps.google.com/?q=Tolv%20Stockholm%20Bowling%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "sport",
+      "öl",
+      "stämning",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m265",
+    "name": "Slaktbaren",
+    "address": "Slakthusplan 3, Gullmarsplan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3021,
+    "lng": 18.0811,
+    "google_maps_url": "https://maps.google.com/?q=Slaktbaren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m266",
+    "name": "Gullmars Grill & Pub",
+    "address": "Gullmarsplan 2",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.3002,
+    "lng": 18.0846,
+    "google_maps_url": "https://maps.google.com/?q=Gullmars%20Grill%20%26%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m267",
+    "name": "Globen Kvarterskrog",
+    "address": "Palmfeltsvägen 3, Globen",
+    "rating": 4.1,
+    "price_level": 1,
+    "lat": 59.2892,
+    "lng": 18.0806,
+    "google_maps_url": "https://maps.google.com/?q=Globen%20Kvarterskrog%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m268",
+    "name": "Söderbilsbaren",
+    "address": "Johanneshovsvägen 2, Gullmarsplan",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.301,
+    "lng": 18.081,
+    "google_maps_url": "https://maps.google.com/?q=S%C3%B6derbilsbaren%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m269",
+    "name": "Boomerang Bar",
+    "address": "Gullmarsplan 8",
+    "rating": 3.9,
+    "price_level": 1,
+    "lat": 59.2973,
+    "lng": 18.0755,
+    "google_maps_url": "https://maps.google.com/?q=Boomerang%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 59,
+    "vibes": [
+      "billigt",
+      "sunkhak",
+      "öl",
+      "avslappnat"
+    ]
+  },
+  {
+    "id": "m270",
+    "name": "Tele2 Arena Premium Lounge",
+    "address": "Arenavägen 69, Globen",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.2932,
+    "lng": 18.0786,
+    "google_maps_url": "https://maps.google.com/?q=Tele2%20Arena%20Premium%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m271",
+    "name": "Bistro Globen",
+    "address": "Arenavägen 55, Globen",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.2948,
+    "lng": 18.0863,
+    "google_maps_url": "https://maps.google.com/?q=Bistro%20Globen%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m272",
+    "name": "Erlands",
+    "address": "Gästrikegatan 1, Vasastan",
+    "rating": 4.5,
+    "price_level": 2,
+    "lat": 59.3453,
+    "lng": 18.0485,
+    "google_maps_url": "https://maps.google.com/?q=Erlands%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m273",
+    "name": "Mellqvist Kaffebar / Vinbar",
+    "address": "Rörstrandsgatan 4, Vasastan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.344,
+    "lng": 18.0483,
+    "google_maps_url": "https://maps.google.com/?q=Mellqvist%20Kaffebar%20%2F%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m274",
+    "name": "L'Avventura Cocktail Lounge",
+    "address": "Sveavägen 77, Vasastan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3393,
+    "lng": 18.0515,
+    "google_maps_url": "https://maps.google.com/?q=L'Avventura%20Cocktail%20Lounge%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m275",
+    "name": "Nya Hattfabriken STHLM",
+    "address": "Odengatan 34, Vasastan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3421,
+    "lng": 18.0493,
+    "google_maps_url": "https://maps.google.com/?q=Nya%20Hattfabriken%20STHLM%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m276",
+    "name": "Svartengrens (Baren)",
+    "address": "Roslagsgatan 23, Vasastan",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3453,
+    "lng": 18.0535,
+    "google_maps_url": "https://maps.google.com/?q=Svartengrens%20(Baren)%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m277",
+    "name": "Babette",
+    "address": "Roslagsgatan 16, Vasastan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3441,
+    "lng": 18.0546,
+    "google_maps_url": "https://maps.google.com/?q=Babette%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m278",
+    "name": "Combo Vinbar",
+    "address": "Odengatan 26, Vasastan",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.344,
+    "lng": 18.0508,
+    "google_maps_url": "https://maps.google.com/?q=Combo%20Vinbar%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m279",
+    "name": "Buco Nero Baren",
+    "address": "Roslagsgatan 4, Vasastan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3441,
+    "lng": 18.0483,
+    "google_maps_url": "https://maps.google.com/?q=Buco%20Nero%20Baren%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m280",
+    "name": "Cadier Express Vasastan",
+    "address": "Sankt Eriksplan 4, Vasastan",
+    "rating": 4.1,
+    "price_level": 2,
+    "lat": 59.3423,
+    "lng": 18.0469,
+    "google_maps_url": "https://maps.google.com/?q=Cadier%20Express%20Vasastan%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "kvarterskrog",
+      "avslappnat",
+      "husman",
+      "öl"
+    ]
+  },
+  {
+    "id": "m281",
+    "name": "Flying Horse Pub",
+    "address": "Odengatan 44, Vasastan",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3455,
+    "lng": 18.0523,
+    "google_maps_url": "https://maps.google.com/?q=Flying%20Horse%20Pub%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "pub",
+      "klassiskt",
+      "öl",
+      "mysigt"
+    ]
+  },
+  {
+    "id": "m282",
+    "name": "Humlan",
+    "address": "Humlegården, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3353,
+    "lng": 18.0812,
+    "google_maps_url": "https://maps.google.com/?q=Humlan%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m283",
+    "name": "Cavabar Östermalmstorg",
+    "address": "Nybrogatan 23, Östermalm",
+    "rating": 4.4,
+    "price_level": 2,
+    "lat": 59.3338,
+    "lng": 18.0736,
+    "google_maps_url": "https://maps.google.com/?q=Cavabar%20%C3%96stermalmstorg%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m284",
+    "name": "Gaston Östermalm",
+    "address": "Humlegårdsgatan 14, Östermalm",
+    "rating": 4.4,
+    "price_level": 3,
+    "lat": 59.3329,
+    "lng": 18.0722,
+    "google_maps_url": "https://maps.google.com/?q=Gaston%20%C3%96stermalm%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "vin",
+      "naturvin",
+      "mysigt",
+      "chill"
+    ]
+  },
+  {
+    "id": "m285",
+    "name": "Bar Anglais",
+    "address": "Humlegårdsgatan 23, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.331,
+    "lng": 18.0757,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20Anglais%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m286",
+    "name": "Sturecompagniet Main Bar",
+    "address": "Sturegatan 4, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.336,
+    "lng": 18.0788,
+    "google_maps_url": "https://maps.google.com/?q=Sturecompagniet%20Main%20Bar%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m287",
+    "name": "Riche Fenix",
+    "address": "Götgatan 40, Södermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3159,
+    "lng": 18.0721,
+    "google_maps_url": "https://maps.google.com/?q=Riche%20Fenix%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m288",
+    "name": "Bar Coquetel",
+    "address": "Birger Jarlsgatan 20, Östermalm",
+    "rating": 4.5,
+    "price_level": 3,
+    "lat": 59.3327,
+    "lng": 18.0809,
+    "google_maps_url": "https://maps.google.com/?q=Bar%20Coquetel%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "cocktail",
+      "drinkar",
+      "lyx",
+      "intim"
+    ]
+  },
+  {
+    "id": "m289",
+    "name": "The Laughing Duck",
+    "address": "Jakobsbergsgatan 25, Norrmalm",
+    "rating": 4.2,
+    "price_level": 2,
+    "lat": 59.3319,
+    "lng": 18.0681,
+    "google_maps_url": "https://maps.google.com/?q=The%20Laughing%20Duck%20Stockholm",
+    "estimated_drink_price_sek": 85,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
+  },
+  {
+    "id": "m290",
+    "name": "Kåken",
+    "address": "Regeringsgatan 66, Östermalm",
+    "rating": 4.2,
+    "price_level": 3,
+    "lat": 59.3392,
+    "lng": 18.0755,
+    "google_maps_url": "https://maps.google.com/?q=K%C3%A5ken%20Stockholm",
+    "estimated_drink_price_sek": 115,
+    "vibes": [
+      "bar",
+      "mingel",
+      "afterwork",
+      "chill"
+    ]
   }
 ]

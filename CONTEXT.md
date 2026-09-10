@@ -109,12 +109,30 @@ budget, avståndspreferens och valda dryckeskategorier tillsammans med ruttens b
 | Fil | Status | Ansvar |
 |-----|--------|--------|
 | `src/pages/Landing.tsx` | ✅ Klar | Inmatning av profil (vikt, kön), fördrinkar, tid, målpromille, dryckesval och avståndspreferens. |
-| `src/pages/Results.tsx` | ✅ Klar | Visar promillestatus, interaktiva budget-flikar, pour plan per bar, samt asynkron AI-matchning med laddstatus. |
+| `src/pages/Results.tsx` | ✅ Klar | Visar promillestatus, interaktiva budget-flikar, pour plan per bar, samt asynkron AI-matchning med laddstatus. Hanterar platsåtkomst med automatisk fallback till standardplats (T-Centralen) vid nekad åtkomst eller avsaknad av närliggande barer. |
 | `src/components/bars/BarCard.tsx` | ✅ Klar | Renderar barinfo, avstånd, betyg, Google Maps-länk, pour plan-allokering, vibe-piller (`#mysigt`) och `aiReason` ("✨ AI-tips"). |
 | `src/components/bars/TierSelector.tsx` | ✅ Klar | Flikväljare för budget-tiers (Billig / Medel / Lyx). |
 | `src/components/bars/DistanceFilter.tsx` | ✅ Klar | Väljare för avståndspreferens (Nära / Längre / Spelar ingen roll). |
 | `src/stores/userStore.ts` | ✅ Klar | Zustand-store för användarprofil med localStorage-persistens. |
 | `src/stores/sessionStore.ts` | ✅ Klar | Zustand-store för aktuell beräkningssession (`sessionInput`, `bacResult`). |
+
+---
+
+### Geolocation, Standardplats & Demoläge (Instruktioner & Arkitektur)
+
+För att appen och AI-matchningen ska kunna testas oavsett var utvecklaren eller användaren befinner sig fysiskt:
+
+1. **Ingen IP-adress behövs**:
+   - Webbläsarens `navigator.geolocation` levererar GPS-koordinater (`latitude` och `longitude`). Ingen IP-adresslagring eller IP-geolokalisering krävs.
+2. **Standardplats (Default Coordinates)**:
+   - T-Centralen / Sergels torg: `{ lat: 59.3293, lng: 18.0686 }`.
+   - Detta är den centrala knutpunkten i Stockholm som appen utgår ifrån som standard.
+3. **Automatisk fallback-logik**:
+   - Om användaren **nekar** platsåtkomst i webbläsaren: Appen använder automatiskt standardplatsen.
+   - Om användaren **tillåter** platsåtkomst men befinner sig utanför täckning (> 5 km från närmsta bar i databasen, så att 0 barer hittas): Appen växlar automatiskt över till standardplatsen vid T-Centralen.
+   - Ett informationsfält visas för användaren: *"Inga barer hittades i din fysiska närhet — visar barer runt T-Centralen, Stockholm i demoläge."*
+4. **Testbarhet**:
+   - Denna logik säkerställer att utvecklare alltid kan köra `npm run dev` och testa hela flödet (inklusive Lager B Gemini AI-matchningen) utan att behöva mocka webbläsarens sensorer manuellt.
 
 ---
 
@@ -144,13 +162,13 @@ budget, avståndspreferens och valda dryckeskategorier tillsammans med ruttens b
 - [x] **Widmark-formeln**: implementerad och testad (`widmark.ts`)
 - [x] **BAC-projektion**: implementerad och testad (`bacProjection.ts`)
 - [x] **Pour plan**: implementerad och testad (`pourPlan.ts`)
-- [x] **Bardatabas**: externaliserad till `/data/bars.json` med 25 barer och vibe-taggar
+- [x] **Bardatabas**: externaliserad till `/data/bars.json` med 290 barer och vibe-taggar
 - [x] **Bar-route-generering**: regelbaserad filtrering och budget-tier-logik i `recommendations.ts`
 - [x] **LLM-integration (Lager B)**: `matcher.ts` implementerad, ansluten mot Gemini API med retry-logik
 - [x] **Systemprompt**: definierad och testad med stöd för vibe-taggar, motiveringar och JSON-schema (`systemPrompt.ts`)
 - [x] **Frontend-integration**: `Results.tsx` och `BarCard.tsx` uppdaterade med asynkron laddning, vibe-piller och "✨ AI-tips"
 - [x] **Typdefinitioner & Tsconfig**: `Bar.vibes` tillagt i `src/types/index.ts` och `tsconfig.json` inkluderar `data/`
-- [x] **Enhetstester**: 25/25 tester passerar (`pourPlan.test.ts`, `places.test.ts`, `userStore.test.ts`, `bacProjection.test.ts`)
+- [x] **Enhetstester**: 28/28 tester passerar (`pourPlan.test.ts`, `places.test.ts`, `userStore.test.ts`, `bacProjection.test.ts`, `recommendations.test.ts`)
 - [x] **Bygge**: `tsc && vite build` kompilerar utan fel
 
 ---
@@ -161,13 +179,27 @@ budget, avståndspreferens och valda dryckeskategorier tillsammans med ruttens b
 2. **LLM-svar alltid i JSON** (valideras och struktureras i `matcher.ts`).
 3. **Lager A och B är löst kopplade** — `projectBac`, `generateRoutes` och `buildPourPlan` fungerar helt självständigt utan AI. LLM lägger sig ovanpå i gränssnittet för att berika med vibe-analys och motiveringar utan att vara en single-point-of-failure.
 4. **Externaliserad bardata** — bardatan ligger i `/data/bars.json` för att enkelt kunna utökas eller ersättas med externa API:er framåt.
+5. **Standardplats och automatisk demoläges-fallback** — Om användaren nekar platsåtkomst eller befinner sig för långt från databasens barer (> 5 km) används T-Centralen (`59.3293, 18.0686`) som standardplats så att rutter och AI-matchning alltid kan testas.
 
 ---
 
 ## Nästa steg (prioritetsordning)
 
-1. **Användarfilter för vibes i UI**: Möjlighet för användaren att aktivt välja eller filtrera på önskad vibe (t.ex. bara visa barer med `#mysigt` eller `#dans`).
-2. **Utökad bardatabas**: Lägga till fler barer i fler stadsdelar (Vasastan, Kungsholmen, Östermalm, Gamla Stan) i `/data/bars.json`.
-3. **Ruttpersistens och delning**: Möjlighet att spara eller dela kvällens skapade bar-rutt via URL-parametrar eller länk.
-4. **Testning av matchningsprompt**: Verifiera LLM-svaren och motiveringarna mot fler varierade användarscenarier och edge cases.
+1. **Implementera geolocation fallback i `Results.tsx`**: Automatisk övergång till T-Centralen med informationsbanner om inga barer finns i närheten.
+2. **Användarfilter för vibes i UI**: Möjlighet för användaren att aktivt välja eller filtrera på önskad vibe (t.ex. bara visa barer med `#mysigt` eller `#dans`).
+3. **Utökad bardatabas**: Lägga till fler barer i fler stadsdelar (Vasastan, Kungsholmen, Östermalm, Gamla Stan) i `/data/bars.json`.
+4. **Ruttpersistens och delning**: Möjlighet att spara eller dela kvällens skapade bar-rutt via URL-parametrar eller länk.
+5. **Testning av matchningsprompt**: Verifiera LLM-svaren och motiveringarna mot fler varierade användarscenarier och edge cases.
+
+---
+
+## Checklista: Implementering av Geolocation Fallback & Demoläge
+
+- [x] **1. Positionshantering & detektering i `Results.tsx`**: Kontrollera om användarens GPS-position är inom räckhåll (< 5 km från mock-databasens barer i Stockholm). Om användaren nekar platsåtkomst, ett fel inträffar, eller om avståndet överstiger 5 km, aktiveras fallback till T-Centralen (`lat: 59.3293, lng: 18.0686`).
+- [x] **2. Täckningsgaranti för T-Centralen**: Se till att ruttgenerering kring T-Centralen hittar tillräckligt med barer (billig/medel/lyx) även om standardradien är snäv, genom att vid behov automatiskt vidga sökningen till 2 km så att användaren alltid får rutter.
+- [x] **3. Informationsbanner i UI (`Results.tsx`)**: Visa en tydlig banner när demoläge/fallback är aktivt: *"📍 Demoläge: Inga barer i din omedelbara närhet — visar barer runt T-Centralen, Stockholm."*
+- [x] **4. Manuell växling mellan GPS och demoläge**: Ge användaren möjlighet att enkelt växla mellan sin verkliga GPS-position och standardplatsen T-Centralen via en knapp i gränssnittet.
+- [x] **5. Verifiering och tester**: Kör `npm test` och `npm run build` för att bekräfta att alla befintliga och nya flöden fungerar utan fel.
+
+
 
